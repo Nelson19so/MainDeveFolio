@@ -8,8 +8,8 @@ My personal webdevfolio using react.js and django.
 2. Python.
 
 # Frame-Works
--- React (Client-Side): Used React for the UI dev
--- Django (Server-Side): Used Django for back-end dev
+- React (Client-Side): Used React for the UI dev
+- Django (Server-Side): Used Django for back-end dev
 
 # Tips and installation guild to use the framework/library
 Install the followin as stated: 
