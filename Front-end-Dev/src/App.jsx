@@ -1,7 +1,18 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./pages/blog/Home";
+import PageError from "./pages/error/PageError";
+
 function App() {
   return (
     <>
-      <h1>Hello world</h1>
+      <BrowserRouter>
+        <Routes>
+          {/* Home page url configoration */}
+          <Route path="/" element={<Home />} />
+          {/* 404 error page configuration over here */}
+          <Route path="*" element={<PageError />} />
+        </Routes>
+      </BrowserRouter>
     </>
   );
 }

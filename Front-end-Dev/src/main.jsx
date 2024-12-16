@@ -12,9 +12,9 @@ import "./assets/css/main.css";
 /**
  * Javascript linking
  */
-import "./assets/js/jquery.slicknav.js";
-import "./assets/js/bootstrap.min.js";
-import "./assets/js/jquery.magnific-popup.min.js";
+// import "./assets/js/jquery.slicknav.js";
+// import "./assets/js/bootstrap.min.js";
+// import "./assets/js/jquery.magnific-popup.min.js";
 import "./assets/js/jquery-3.3.1.min.js";
 
 /**
