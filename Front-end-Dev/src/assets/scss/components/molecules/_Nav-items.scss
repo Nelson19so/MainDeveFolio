@@ -1,0 +1,51 @@
+nav,
+.Navbar-fixed,
+.Navbar-expand {
+  transition: 0.5s;
+  z-index: 222;
+
+  .container {
+    .navbar-brand {
+      color: $background-white;
+      font-weight: 800;
+      font-size: 35px;
+    }
+    a {
+      color: $color-muted;
+    }
+
+    ul {
+      li {
+        a {
+          color: $color-muted;
+
+          &:hover {
+            display: block;
+            padding-bottom: 10px;
+            border-bottom: 1px solid $background-white;
+            color: $background-white;
+          }
+
+          &:active,
+          &:focus,
+          &:visited {
+            color: $background-white;
+            display: block;
+            padding-bottom: 10px;
+            border-bottom: 1px solid $background-white;
+            font-weight: 600;
+          }
+        }
+      }
+    }
+  }
+}
+.Navbar-fixed {
+  position: fixed;
+  top: 0;
+  background-color: $primary-color-one;
+}
+.Navbar-expand {
+  padding: 5% 0;
+  top: 0;
+}

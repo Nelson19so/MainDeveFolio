@@ -1,0 +1,25 @@
+.container-client {
+  background-color: $primary-color-one;
+
+  .container {
+    .client-man {
+      .client-inner {
+        color: $background-white;
+        text-align: center;
+
+        .cliend-inner-main {
+          .font-container {
+            .font {
+              display: block;
+              padding: 25px 20px;
+              border: 1px solid $color-muted;
+              width: 100px;
+              // height: 50px;
+              border-radius: 6px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

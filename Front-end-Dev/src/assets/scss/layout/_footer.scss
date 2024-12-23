@@ -1,0 +1,111 @@
+.container-footer {
+  footer {
+    width: 100vw;
+    background-color: $primary-color-one-light;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .main-wrapper {
+      height: 100%;
+      overflow: hidden;
+      width: 100%;
+
+      .container-items {
+        height: 100%;
+        overflow: hidden;
+        width: 100%;
+        padding: 3% 13%;
+
+        .container-input {
+          display: flex;
+          justify-content: center;
+          width: 100%;
+          margin-top: 4%;
+        }
+
+        .container-main-contact {
+          margin-top: 5%;
+          width: 100%;
+
+          .container--contact-2 {
+            .container-i {
+              float: left;
+              padding: 15px 20px;
+              cursor: pointer;
+              min-width: 20px;
+              min-height: 25px;
+              border-radius: 100px;
+              text-align: center;
+              border: 1px solid $color-muted;
+              font-size: 13px;
+              margin-top: 10px;
+            }
+          }
+
+          .container--contact {
+            float: left;
+            width: 30%;
+
+            @media only screen and (max-width: 768px) {
+              width: 100%;
+              margin-top: 5%;
+            }
+
+            .container-i {
+              float: left;
+              padding: 8% 9%;
+              cursor: pointer;
+              min-width: 70px;
+              min-height: 68px;
+              border-radius: 100px;
+              text-align: center;
+              border: 1px solid $color-muted;
+              font-size: 13px;
+
+              @media only screen and (max-width: 768px) {
+                padding: 25px 32px;
+                min-width: 20px;
+                min-height: 25px;
+              }
+
+              &:hover {
+                @include Button-hover;
+              }
+            }
+
+            .container-details {
+              padding: 2% 0;
+              margin-top: 5%;
+
+              h6 {
+                color: $background-white;
+                font-size: 20px;
+              }
+            }
+          }
+        }
+      }
+
+      .container-bottom {
+        width: 100%;
+        border-top: 1px solid $color-muted;
+        clear: both;
+        padding: 1% 12%;
+        padding-top: 3%;
+        font-size: small;
+        color: $color-muted;
+
+        i {
+          color: $background-white;
+        }
+        a {
+          color: $color-muted;
+        }
+        p {
+          color: $color-muted;
+          font-size: 600;
+        }
+      }
+    }
+  }
+}

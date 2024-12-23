@@ -1,3 +1,430 @@
+body,
+html {
+  width: 100vw;
+  overflow-x: hidden;
+  margin: 0;
+}
+body::-webkit-scrollbar,
+html::-webkit-scrollbar {
+  width: 7px;
+}
+body::-webkit-scrollbar-track,
+html::-webkit-scrollbar-track {
+  background-color: rgb(218, 218, 218);
+}
+body::-webkit-scrollbar-thumb,
+html::-webkit-scrollbar-thumb {
+  background-color: rgb(163, 163, 163);
+}
+body::-webkit-scrollbar-thumb:hover,
+html::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(245, 245, 245);
+}
 
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+.back-drop.News-letter button {
+  float: right;
+  margin: 10px;
+  font-size: 20px;
+}
+
+.go-back-button button {
+  background-color: #c1c1c1;
+  outline: none;
+  padding: 5px 10px;
+  font-size: smaller;
+}
+.go-back-button button:hover {
+  background-color: #cecece;
+}
+
+button {
+  padding: 12px 20px;
+  border: none;
+  outline: none;
+}
+
+.container-btn-- .button- button {
+  padding: 20px 7%;
+  font-size: small;
+  border-radius: 50px;
+  background-color: transparent;
+  color: white;
+  border: 1px solid rgb(194, 194, 194);
+}
+.container-btn-- .button- button:hover {
+  background-color: rgba(59, 59, 86, 0.5);
+}
+.container-btn-- .button-two span {
+  display: flex;
+}
+.container-btn-- .button-two span button {
+  padding: 29px 35px;
+  border-radius: 100px;
+  background-color: transparent;
+  color: white;
+  border: 3px solid rgb(194, 194, 194);
+}
+.container-btn-- .button-two span button:hover {
+  background-color: rgba(59, 59, 86, 0.5);
+}
+.container-btn-- .button-two span p {
+  margin: 25px 15px;
+  font-size: smaller;
+}
+
+nav .container button {
+  font-size: small;
+  background-color: transparent;
+  color: white;
+  border: 1px solid rgb(194, 194, 194);
+}
+nav .container button:hover {
+  background-color: rgba(59, 59, 86, 0.5);
+}
+nav .container button i {
+  font-size: xx-small;
+}
+
+.container-input button {
+  background-color: #282838;
+  color: white;
+  border: 1px solid rgb(194, 194, 194);
+  padding: 1% 3%;
+  font-size: small;
+  border: none;
+}
+@media only screen and (max-width: 768px) {
+  .container-input button {
+    display: none;
+  }
+}
+.container-input button:hover {
+  color: white;
+  background-color: rgba(59, 59, 86, 0.5);
+}
+
+.container-input .email-subscribe {
+  padding: 1.5% 3%;
+  width: 40%;
+  background-color: transparent;
+  border: 0.5px solid rgb(194, 194, 194);
+  outline: none;
+  color: white;
+  font-size: small;
+}
+@media only screen and (max-width: 768px) {
+  .container-input .email-subscribe {
+    padding: 5% 0;
+    padding-left: 10%;
+    width: 100%;
+  }
+}
+
+nav,
+.Navbar-fixed,
+.Navbar-expand {
+  transition: 0.5s;
+  z-index: 222;
+}
+nav .container .navbar-brand,
+.Navbar-fixed .container .navbar-brand,
+.Navbar-expand .container .navbar-brand {
+  color: white;
+  font-weight: 800;
+  font-size: 35px;
+}
+nav .container a,
+.Navbar-fixed .container a,
+.Navbar-expand .container a {
+  color: rgb(194, 194, 194);
+}
+nav .container ul li a,
+.Navbar-fixed .container ul li a,
+.Navbar-expand .container ul li a {
+  color: rgb(194, 194, 194);
+}
+nav .container ul li a:hover,
+.Navbar-fixed .container ul li a:hover,
+.Navbar-expand .container ul li a:hover {
+  display: block;
+  padding-bottom: 10px;
+  border-bottom: 1px solid white;
+  color: white;
+}
+nav .container ul li a:active, nav .container ul li a:focus, nav .container ul li a:visited,
+.Navbar-fixed .container ul li a:active,
+.Navbar-fixed .container ul li a:focus,
+.Navbar-fixed .container ul li a:visited,
+.Navbar-expand .container ul li a:active,
+.Navbar-expand .container ul li a:focus,
+.Navbar-expand .container ul li a:visited {
+  color: white;
+  display: block;
+  padding-bottom: 10px;
+  border-bottom: 1px solid white;
+  font-weight: 600;
+}
+
+.Navbar-fixed {
+  position: fixed;
+  top: 0;
+  background-color: #282838;
+}
+
+.Navbar-expand {
+  padding: 5% 0;
+  top: 0;
+}
+
+.back-drop {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 0;
+  position: fixed;
+  transition: 2s;
+  z-index: 77777;
+}
+.back-drop .modal-- {
+  width: 400px;
+  padding: 20px;
+  margin: 100px auto;
+  background-color: white;
+  border-radius: 10px;
+  align-items: center;
+}
+
+.container-load-screen {
+  padding-top: 270px;
+  position: fixed;
+  z-index: 100000000000000000;
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  background-color: rgba(213, 213, 213, 0.5);
+}
+
+.Home-page {
+  overflow: hidden;
+  height: auto;
+  width: 100vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../../../../public/home.jpg");
+}
+.Home-page .backdrop-home {
+  height: 100%;
+  background-color: rgba(36, 36, 58, 0.91);
+}
+.Home-page .backdrop-home .container {
+  padding: 0 5%;
+}
+@media only screen and (max-width: 768px) {
+  .Home-page .backdrop-home .container {
+    padding: 0 10%;
+  }
+}
+.Home-page .backdrop-home .container .row .left-container h2 {
+  font-weight: 700;
+  font-size: 47px;
+}
+.Home-page .backdrop-home .container .row .left-container span {
+  color: rgb(194, 194, 194);
+}
+
+.container-footer footer {
+  width: 100vw;
+  background-color: rgb(47, 47, 63);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.container-footer footer .main-wrapper {
+  height: 100%;
+  overflow: hidden;
+  width: 100%;
+}
+.container-footer footer .main-wrapper .container-items {
+  height: 100%;
+  overflow: hidden;
+  width: 100%;
+  padding: 3% 13%;
+}
+.container-footer footer .main-wrapper .container-items .container-input {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 4%;
+}
+.container-footer footer .main-wrapper .container-items .container-main-contact {
+  margin-top: 5%;
+  width: 100%;
+}
+.container-footer footer .main-wrapper .container-items .container-main-contact .container--contact-2 .container-i {
+  float: left;
+  padding: 15px 20px;
+  cursor: pointer;
+  min-width: 20px;
+  min-height: 25px;
+  border-radius: 100px;
+  text-align: center;
+  border: 1px solid rgb(194, 194, 194);
+  font-size: 13px;
+  margin-top: 10px;
+}
+.container-footer footer .main-wrapper .container-items .container-main-contact .container--contact {
+  float: left;
+  width: 30%;
+}
+@media only screen and (max-width: 768px) {
+  .container-footer footer .main-wrapper .container-items .container-main-contact .container--contact {
+    width: 100%;
+    margin-top: 5%;
+  }
+}
+.container-footer footer .main-wrapper .container-items .container-main-contact .container--contact .container-i {
+  float: left;
+  padding: 8% 9%;
+  cursor: pointer;
+  min-width: 70px;
+  min-height: 68px;
+  border-radius: 100px;
+  text-align: center;
+  border: 1px solid rgb(194, 194, 194);
+  font-size: 13px;
+}
+@media only screen and (max-width: 768px) {
+  .container-footer footer .main-wrapper .container-items .container-main-contact .container--contact .container-i {
+    padding: 25px 32px;
+    min-width: 20px;
+    min-height: 25px;
+  }
+}
+.container-footer footer .main-wrapper .container-items .container-main-contact .container--contact .container-i:hover {
+  background-color: rgba(59, 59, 86, 0.5);
+}
+.container-footer footer .main-wrapper .container-items .container-main-contact .container--contact .container-details {
+  padding: 2% 0;
+  margin-top: 5%;
+}
+.container-footer footer .main-wrapper .container-items .container-main-contact .container--contact .container-details h6 {
+  color: white;
+  font-size: 20px;
+}
+.container-footer footer .main-wrapper .container-bottom {
+  width: 100%;
+  border-top: 1px solid rgb(194, 194, 194);
+  clear: both;
+  padding: 1% 12%;
+  padding-top: 3%;
+  font-size: small;
+  color: rgb(194, 194, 194);
+}
+.container-footer footer .main-wrapper .container-bottom i {
+  color: white;
+}
+.container-footer footer .main-wrapper .container-bottom a {
+  color: rgb(194, 194, 194);
+}
+.container-footer footer .main-wrapper .container-bottom p {
+  color: rgb(194, 194, 194);
+  font-size: 600;
+}
+
+.container-about-layout {
+  width: 100vw;
+  overflow: hidden;
+  background-color: #282838;
+}
+.container-about-layout .container-service-grid .container-inner .imgage-grid .img-- img {
+  width: 100%;
+}
+.container-about-layout .container-service-grid .right-container-about .container .container--2 .-container- .top-- i {
+  display: block;
+  padding: 20px;
+  border: 1px solid rgb(194, 194, 194);
+  width: 60px;
+}
+@media only screen and (max-width: 768px) {
+  .container-about-layout .container-service-grid .right-container-about .container .container--2 .-about--2 {
+    margin-top: 10%;
+  }
+}
+
+.container-breadCrumbs {
+  width: 100vw;
+  background-color: rgb(47, 47, 63);
+  padding-bottom: 8%;
+}
+@media only screen and (max-width: 768px) {
+  .container-breadCrumbs {
+    padding-bottom: 25%;
+  }
+}
+.container-breadCrumbs .bradcrumbs-back-drop {
+  height: 100%;
+}
+.container-breadCrumbs .bradcrumbs-back-drop .container-breadcrumbs-item {
+  padding: 0 15px;
+  padding-top: 15px;
+  padding-bottom: 2px;
+  margin-top: -20px;
+  background-color: rgb(35, 35, 48);
+  width: 220px;
+  border-radius: 50px;
+}
+
+.container-testimonials {
+  width: 100vw;
+  overflow: hidden;
+  background-color: rgb(36, 36, 52);
+}
+.container-testimonials .container-testimonial-items .container {
+  background-color: rgb(47, 47, 63);
+  border-radius: 6px;
+}
+.container-testimonials .container-testimonial-items .container .top-container {
+  width: 100%;
+}
+.container-testimonials .container-testimonial-items .container .top-container .wrapper-img {
+  padding: 20px 25px;
+  width: 70px;
+  border: 2px solid rgb(194, 194, 194);
+  border-radius: 100px;
+}
+
+.container-client {
+  background-color: #282838;
+}
+.container-client .container .client-man .client-inner {
+  color: white;
+  text-align: center;
+}
+.container-client .container .client-man .client-inner .cliend-inner-main .font-container .font {
+  display: block;
+  padding: 25px 20px;
+  border: 1px solid rgb(194, 194, 194);
+  width: 100px;
+  border-radius: 6px;
+}
+
+.container-service-layout {
+  background-color: rgb(36, 36, 52);
+  height: 100vh;
+  width: 100vw;
+}
+
+/**
+* PAGES HEADER
+* to use pages header first add the component to you page, then simply use bootstrap to position it
+* the way you would like it to be, just like text-center and text-muted/text-white.
+*/
 
 /*# sourceMappingURL=main.css.map */

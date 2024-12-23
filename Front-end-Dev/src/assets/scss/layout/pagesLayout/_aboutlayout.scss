@@ -1,0 +1,42 @@
+.container-about-layout {
+  width: 100vw;
+  overflow: hidden;
+  background-color: $primary-color-one;
+
+  .container-service-grid {
+    .container-inner {
+      .imgage-grid {
+        .img-- {
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+
+    .right-container-about {
+      .container {
+        .container--2 {
+          .-container- {
+            .top-- {
+              // .container-code {
+              //   border: 1px solid $color-muted;
+              // }
+              i {
+                display: block;
+                padding: 20px;
+                border: 1px solid $color-muted;
+                width: 60px;
+              }
+            }
+          }
+          .-about--2 {
+            @media only screen and (max-width: 768px) {
+              margin-top: 10%;
+            }
+          }
+        }
+      }
+    }
+  }
+}

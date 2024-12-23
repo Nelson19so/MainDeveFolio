@@ -1,0 +1,113 @@
+// This button closes the modal for Subscribe News Letter
+.back-drop.News-letter {
+  button {
+    float: right;
+    margin: 10px;
+    font-size: 20px;
+  }
+}
+
+// This button returns the user back to their previous page
+.go-back-button {
+  button {
+    background-color: $background-white-darker;
+    outline: none;
+    padding: 5px 10px;
+    font-size: smaller;
+
+    &:hover {
+      background-color: $background-white-darker-two;
+    }
+  }
+}
+
+// General Design for button
+button {
+  padding: 12px 20px;
+  border: none;
+  outline: none;
+}
+
+// Home page button
+.container-btn-- {
+  // button for Download resume
+  .button- {
+    button {
+      padding: 20px 7%;
+      font-size: small;
+      border-radius: 50px;
+      background-color: transparent;
+      color: $background-white;
+      border: 1px solid $color-muted;
+
+      &:hover {
+        @include Button-hover;
+      }
+    }
+  }
+
+  // Button for watching my tutor via youtube
+  .button-two {
+    span {
+      display: flex;
+
+      button {
+        padding: 29px 35px;
+        border-radius: 100px;
+        background-color: transparent;
+        color: $background-white;
+        border: 3px solid $color-muted;
+
+        &:hover {
+          @include Button-hover;
+        }
+      }
+      p {
+        margin: 25px 15px;
+        font-size: smaller;
+      }
+    }
+  }
+}
+
+// Navbar Button
+nav {
+  .container {
+    // Navbar button for hire me
+    button {
+      font-size: small;
+      background-color: transparent;
+      color: $background-white;
+      border: 1px solid $color-muted;
+
+      &:hover {
+        @include Button-hover;
+      }
+
+      i {
+        font-size: xx-small;
+      }
+    }
+  }
+}
+
+// subscibe button for footer
+.container-input {
+  button {
+    background-color: $primary-color-one;
+    color: $background-white;
+    border: 1px solid $color-muted;
+    padding: 1% 3%;
+    font-size: small;
+    border: none;
+
+    @media only screen and (max-width: 768px) {
+      display: none;
+    }
+
+    &:hover {
+      color: $background-white;
+      @include Button-hover;
+    }
+  }
+}

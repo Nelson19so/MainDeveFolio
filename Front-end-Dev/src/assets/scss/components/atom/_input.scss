@@ -1,0 +1,17 @@
+.container-input {
+  .email-subscribe {
+    padding: 1.5% 3%;
+    width: 40%;
+    background-color: transparent;
+    border: 0.5px solid $color-muted;
+    outline: none;
+    color: $background-white;
+    font-size: small;
+
+    @media only screen and (max-width: 768px) {
+      padding: 5% 0;
+      padding-left: 10%;
+      width: 100%;
+    }
+  }
+}

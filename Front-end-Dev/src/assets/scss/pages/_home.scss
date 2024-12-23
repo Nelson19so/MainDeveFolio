@@ -1,0 +1,33 @@
+.Home-page {
+  overflow: hidden;
+  height: auto;
+  width: 100vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../../../../public/home.jpg");
+
+  .backdrop-home {
+    height: 100%;
+    background-color: rgba(36, 36, 58, 0.91);
+
+    .container {
+      padding: 0 5%;
+
+      @media only screen and (max-width: 768px) {
+        padding: 0 10%;
+      }
+
+      .row {
+        .left-container {
+          h2 {
+            font-weight: 700;
+            font-size: 47px;
+          }
+          span {
+            color: $color-muted;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+.container-testimonials {
+  width: 100vw;
+  overflow: hidden;
+  background-color: $primary-color-two-lighter;
+
+  .container-testimonial-items {
+    .container {
+      background-color: $primary-color-one-light;
+      border-radius: 6px;
+
+      .top-container {
+        width: 100%;
+
+        .wrapper-img {
+          padding: 20px 25px;
+          width: 70px;
+          border: 2px solid $color-muted;
+          border-radius: 100px;
+        }
+      }
+    }
+  }
+}
