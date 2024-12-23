@@ -4,7 +4,7 @@
 My personal webdevfolio using react.js and django. 
 
 # Main Language
-1. Javascript
+1. Javascript,
 2. Python.
 
 # Frame-Works
