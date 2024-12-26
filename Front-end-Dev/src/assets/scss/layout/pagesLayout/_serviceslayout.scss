@@ -1,5 +1,31 @@
-.container-service-layout {
-  background-color: $primary-color-two-lighter;
-  height: 100vh;
+.container-service-layout-- {
   width: 100vw;
+  background-color: $primary-color-two-lighter;
+
+  .service-container-inner- {
+    .row {
+      .container-- {
+        margin-bottom: 5%;
+
+        .container {
+          background-color: $primary-color-one-light;
+          height: 400px;
+
+          .header-text {
+            font-size: 50px;
+          }
+
+          .container-items {
+            font-size: 14px;
+            width: 100%;
+
+            span {
+              font-size: 10px;
+              float: left;
+            }
+          }
+        }
+      }
+    }
+  }
 }

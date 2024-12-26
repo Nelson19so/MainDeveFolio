@@ -1,0 +1,78 @@
+.container-tricks-and-tips {
+  overflow: hidden;
+  width: 100vw;
+  background-color: $primary-color-two;
+
+  .container-items {
+    width: 100%;
+
+    .container-items {
+      .container-tricks-and-tips {
+        width: 100%;
+        height: 40vh;
+        background-color: $primary-color-one-light;
+        padding: 3% 3%;
+        display: flex;
+        margin-top: 4%;
+        justify-content: space-between;
+
+        @media only screen and (max-width: 976px) {
+          height: auto;
+          overflow: hidden;
+          display: block;
+          justify-content: center;
+        }
+
+        .container-img {
+          width: 25%;
+          height: 100%;
+          background-image: url("../../../../../public/lee-campbell-DtDlVpy-vvQ-unsplash.jpg");
+          background-repeat: no-repeat;
+          background-size: cover;
+
+          @media only screen and (max-width: 976px) {
+            height: 40vh;
+            width: 100%;
+          }
+        }
+        .container-text-- {
+          width: 45%;
+          height: 100%;
+          padding: 4% 2%;
+          text-align: left;
+
+          @media only screen and (max-width: 976px) {
+            width: 100%;
+          }
+
+          span {
+            width: 100%;
+            font-size: 15px;
+
+            .p-1 {
+              color: $background-white;
+              float: left;
+            }
+            .p-2 {
+              color: $background-white-darker;
+            }
+          }
+          h6 {
+            color: $background-white;
+            font-weight: 600;
+            font-size: 20px;
+          }
+        }
+        .container-btn {
+          height: 100%;
+          padding: 7% 3%;
+          width: 25%;
+
+          @media only screen and (max-width: 976px) {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}

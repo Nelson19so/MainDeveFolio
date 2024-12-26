@@ -15,8 +15,8 @@ export default function Breadcrumbs({ textOne, textTwo, breadcrumbtitle }) {
             <div className="container-breadcrumbs-item">
               <span className="text-muted">
                 <p>
-                  <strong className="mr-1">{textOne}</strong> ||{""}
-                  <strong className="ml-2">{textTwo}</strong>
+                  <span className="mr-1">{textOne}</span> ||{""}
+                  <span className="ml-1">{textTwo}</span>
                 </p>
               </span>
             </div>

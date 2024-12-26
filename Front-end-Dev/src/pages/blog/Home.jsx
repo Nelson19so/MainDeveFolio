@@ -4,8 +4,12 @@ import Newsletter from "../../components/molecules/modal/Newsletter";
 import Navbarbody from "../../components/molecules/Nahbar-items/Navbarbody";
 import Footer from "../../layout/footer/Footer";
 import AboutLayout from "../../layout/pages_Laout/AboutLayout";
+import Blogpostlayout from "../../layout/pages_Laout/Blogpostlayout";
 import Client from "../../layout/pages_Laout/Client";
-import Serviceslayout from "../../layout/pages_Laout/Serviceslayout";
+import Faq from "../../layout/pages_Laout/faq";
+import Project from "../../layout/pages_Laout/Project";
+import Servicecorousel from "../../layout/pages_Laout/Servicecorousel";
+import Servicelayout from "../../layout/pages_Laout/Servicelayout";
 
 function Home() {
   document.title = "Nelson Website dev Home page";
@@ -49,8 +53,12 @@ function Home() {
       </div>
       <div>
         <AboutLayout pagesheader={true} />
-        <Serviceslayout />
+        {/* <Servicelayout pageheader={true} /> */}
+        <Servicecorousel pageheader={true} />
         <Client />
+        <Project />
+        <Blogpostlayout pagesheader={true} DisplayButton={true} />
+        <Faq />
         <Footer />
         <Newsletter />
         <Startloadscrn />

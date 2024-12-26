@@ -1,0 +1,26 @@
+.container-faq {
+  width: 100vw;
+  background-color: $primary-color-one;
+
+  .container {
+    .row {
+      .container-faq- {
+        .container-items-faq {
+          cursor: pointer;
+          background-color: $primary-color-one-light;
+          transition: 1s;
+
+          .container-items {
+            display: none;
+          }
+
+          &:hover {
+            .container-items {
+              display: block;
+            }
+          }
+        }
+      }
+    }
+  }
+}

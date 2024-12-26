@@ -1,5 +1,18 @@
 body,
 html {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container-breadCrumbs .bradcrumbs-back-drop .text-center {
+  font-family: "Times New Roman", Times, serif;
+}
+
+.container-header {
+  font-family: "Times New Roman", Times, serif;
+}
+
+body,
+html {
   width: 100vw;
   overflow-x: hidden;
   margin: 0;
@@ -14,7 +27,7 @@ html::-webkit-scrollbar-track {
 }
 body::-webkit-scrollbar-thumb,
 html::-webkit-scrollbar-thumb {
-  background-color: rgb(163, 163, 163);
+  background-color: #282838;
 }
 body::-webkit-scrollbar-thumb:hover,
 html::-webkit-scrollbar-thumb:hover {
@@ -34,7 +47,7 @@ html::-webkit-scrollbar-thumb:hover {
 }
 
 .go-back-button button {
-  background-color: #c1c1c1;
+  background-color: #9e9e9e;
   outline: none;
   padding: 5px 10px;
   font-size: smaller;
@@ -107,6 +120,36 @@ nav .container button i {
 .container-input button:hover {
   color: white;
   background-color: rgba(59, 59, 86, 0.5);
+}
+
+.button-services-getstarted {
+  font-size: small;
+  background-color: transparent;
+  color: white;
+  border: 1px solid rgb(194, 194, 194);
+  border-radius: 100px;
+  margin-top: 10px;
+}
+.button-services-getstarted:hover {
+  background-color: rgba(59, 59, 86, 0.5);
+}
+
+.button-to-blog-details,
+.text-visit-service {
+  font-size: 12px;
+  border-radius: 50px;
+  color: white;
+  border: 1px solid rgb(194, 194, 194);
+  background-color: transparent;
+}
+.button-to-blog-details i,
+.text-visit-service i {
+  font-size: 9px;
+}
+.button-to-blog-details:hover,
+.text-visit-service:hover {
+  background-color: #282838;
+  color: white;
 }
 
 .container-input .email-subscribe {
@@ -283,7 +326,7 @@ nav .container ul li a:active, nav .container ul li a:focus, nav .container ul l
   float: left;
   width: 30%;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1200px) {
   .container-footer footer .main-wrapper .container-items .container-main-contact .container--contact {
     width: 100%;
     margin-top: 5%;
@@ -338,6 +381,42 @@ nav .container ul li a:active, nav .container ul li a:focus, nav .container ul l
   font-size: 600;
 }
 
+.main-container-aside {
+  width: 100vw;
+  background-color: #282838;
+}
+.main-container-aside .container .container-img-aside {
+  position: relative;
+}
+.main-container-aside .container .container-img-aside img {
+  width: 100%;
+  height: 100%;
+}
+.main-container-aside .container .container-img-aside .back-drop-- {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  padding: 10%;
+  text-align: left;
+}
+.main-container-aside .container .container-img-aside .back-drop-- h1 {
+  margin-top: 10%;
+}
+@media only screen and (max-width: 768px) {
+  .main-container-aside .container .container-img-aside .back-drop-- h1 {
+    font-size: 16px;
+    margin: 0;
+  }
+  .main-container-aside .container .container-img-aside .back-drop-- h5 {
+    font-size: 13px;
+  }
+  .main-container-aside .container .container-img-aside .back-drop-- a {
+    font-size: 10px;
+  }
+}
+
 .container-about-layout {
   width: 100vw;
   overflow: hidden;
@@ -370,6 +449,9 @@ nav .container ul li a:active, nav .container ul li a:focus, nav .container ul l
 }
 .container-breadCrumbs .bradcrumbs-back-drop {
   height: 100%;
+}
+.container-breadCrumbs .bradcrumbs-back-drop .text-center {
+  font-size: 70px;
 }
 .container-breadCrumbs .bradcrumbs-back-drop .container-breadcrumbs-item {
   padding: 0 15px;
@@ -407,18 +489,178 @@ nav .container ul li a:active, nav .container ul li a:focus, nav .container ul l
   color: white;
   text-align: center;
 }
+.container-client .container .client-man .client-inner .cliend-inner-main .container-text-client h1 {
+  font-size: 70px;
+}
 .container-client .container .client-man .client-inner .cliend-inner-main .font-container .font {
   display: block;
-  padding: 25px 20px;
+  padding: 15px 15px;
   border: 1px solid rgb(194, 194, 194);
-  width: 100px;
+  width: 70px;
+  margin-top: 20px;
   border-radius: 6px;
+  font-size: 20px;
 }
 
 .container-service-layout {
-  background-color: rgb(36, 36, 52);
-  height: 100vh;
+  background-color: #282838;
   width: 100vw;
+}
+.container-service-layout .container .container-two-box .container-left .row {
+  padding-left: 3.5%;
+}
+.container-service-layout .container .container-two-box .container-left .row .top-container {
+  background-color: rgb(36, 36, 52);
+  width: 350px;
+}
+.container-service-layout .container .container-two-box .container-left .row .top-container .container-text {
+  font-size: 12px;
+  background-color: rgb(47, 47, 63);
+}
+.container-service-layout .container .container-two-box .container-left .row .top-container .container-text h5 {
+  font-size: 14px;
+}
+.container-service-layout .container .container-two-box .container-left .row .top-container .container-text span i {
+  font-size: 10px;
+}
+.container-service-layout .container .container-two-box .container-right .container-inner-- .container-bottom .cotainer-text .bottom-container .row .holder {
+  background-color: rgb(47, 47, 63);
+}
+
+.container-service-layout-- {
+  width: 100vw;
+  background-color: rgb(36, 36, 52);
+}
+.container-service-layout-- .service-container-inner- .row .container-- {
+  margin-bottom: 5%;
+}
+.container-service-layout-- .service-container-inner- .row .container-- .container {
+  background-color: rgb(47, 47, 63);
+  height: 400px;
+}
+.container-service-layout-- .service-container-inner- .row .container-- .container .header-text {
+  font-size: 50px;
+}
+.container-service-layout-- .service-container-inner- .row .container-- .container .container-items {
+  font-size: 14px;
+  width: 100%;
+}
+.container-service-layout-- .service-container-inner- .row .container-- .container .container-items span {
+  font-size: 10px;
+  float: left;
+}
+
+.container-tricks-and-tips {
+  overflow: hidden;
+  width: 100vw;
+  background-color: rgb(35, 35, 48);
+}
+.container-tricks-and-tips .container-items {
+  width: 100%;
+}
+.container-tricks-and-tips .container-items .container-items .container-tricks-and-tips {
+  width: 100%;
+  height: 40vh;
+  background-color: rgb(47, 47, 63);
+  padding: 3% 3%;
+  display: flex;
+  margin-top: 4%;
+  justify-content: space-between;
+}
+@media only screen and (max-width: 976px) {
+  .container-tricks-and-tips .container-items .container-items .container-tricks-and-tips {
+    height: auto;
+    overflow: hidden;
+    display: block;
+    justify-content: center;
+  }
+}
+.container-tricks-and-tips .container-items .container-items .container-tricks-and-tips .container-img {
+  width: 25%;
+  height: 100%;
+  background-image: url("../../../../../public/lee-campbell-DtDlVpy-vvQ-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media only screen and (max-width: 976px) {
+  .container-tricks-and-tips .container-items .container-items .container-tricks-and-tips .container-img {
+    height: 40vh;
+    width: 100%;
+  }
+}
+.container-tricks-and-tips .container-items .container-items .container-tricks-and-tips .container-text-- {
+  width: 45%;
+  height: 100%;
+  padding: 4% 2%;
+  text-align: left;
+}
+@media only screen and (max-width: 976px) {
+  .container-tricks-and-tips .container-items .container-items .container-tricks-and-tips .container-text-- {
+    width: 100%;
+  }
+}
+.container-tricks-and-tips .container-items .container-items .container-tricks-and-tips .container-text-- span {
+  width: 100%;
+  font-size: 15px;
+}
+.container-tricks-and-tips .container-items .container-items .container-tricks-and-tips .container-text-- span .p-1 {
+  color: white;
+  float: left;
+}
+.container-tricks-and-tips .container-items .container-items .container-tricks-and-tips .container-text-- span .p-2 {
+  color: #9e9e9e;
+}
+.container-tricks-and-tips .container-items .container-items .container-tricks-and-tips .container-text-- h6 {
+  color: white;
+  font-weight: 600;
+  font-size: 20px;
+}
+.container-tricks-and-tips .container-items .container-items .container-tricks-and-tips .container-btn {
+  height: 100%;
+  padding: 7% 3%;
+  width: 25%;
+}
+@media only screen and (max-width: 976px) {
+  .container-tricks-and-tips .container-items .container-items .container-tricks-and-tips .container-btn {
+    width: 100%;
+  }
+}
+
+.container-project-main {
+  width: 100vw;
+  background-color: rgb(47, 47, 63);
+}
+.container-project-main .container-project-inner .row .container-items-main .container {
+  background-image: url("../../../../../public/home.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 350px;
+}
+.container-project-main .container-project-inner .row .container-items-main .container .container-img {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 10%;
+}
+.container-project-main .container-project-inner .row .container-items-main .container .container-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.container-faq {
+  width: 100vw;
+  background-color: #282838;
+}
+.container-faq .container .row .container-faq- .container-items-faq {
+  cursor: pointer;
+  background-color: rgb(47, 47, 63);
+  transition: 1s;
+}
+.container-faq .container .row .container-faq- .container-items-faq .container-items {
+  display: none;
+}
+.container-faq .container .row .container-faq- .container-items-faq:hover .container-items {
+  display: block;
 }
 
 /**

@@ -17,18 +17,39 @@ export default function Navbardropdown() {
         </Link>
 
         <div
-          className="dropdown-menu bg-dark"
+          className="dropdown-menu bg-dark shadow"
           style={{ borderRadius: "6px" }}
           aria-labelledby="dropdownMenuLink"
         >
+          <Link className="dropdown-item">
+            <span>Languages</span>
+          </Link>
+          <div className="dropdown-divider"></div>
           <Link className="dropdown-item" href="#">
-            Action
+            HTML / CSS
           </Link>
           <Link className="dropdown-item" href="#">
-            Another action
+            Javascript
           </Link>
           <Link className="dropdown-item" href="#">
-            Something else here
+            Python
+          </Link>
+          <div className="dropdown-divider"></div>
+          <Link className="dropdown-item">
+            <span>Frameworks</span>
+          </Link>
+          <div className="dropdown-divider"></div>
+          <Link className="dropdown-item" href="#">
+            React
+          </Link>
+          <Link className="dropdown-item" href="#">
+            Django
+          </Link>
+          <Link className="dropdown-item" href="#">
+            Django-rest-framework
+          </Link>
+          <Link className="dropdown-item" href="#">
+            Node.js & Express
           </Link>
         </div>
       </div>

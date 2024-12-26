@@ -30,13 +30,13 @@ export default function Navbarbody() {
       <nav
         className={
           FixedNavbar
-            ? "navbar navbar-expand-lg navbar-light w-100 Navbar-fixed pt-3 pb-3"
+            ? "navbar navbar-expand-lg navbar-light w-100 Navbar-fixed pt-3 pb-3 shadow"
             : "navbar navbar-expand-lg navbar-light w-100 Navbar-expand"
         }
         ref={Navbar}
       >
         <div className="container">
-          <Link className="navbar-brand mr-5" to={scrolltop}>
+          <Link className="navbar-brand mr-5" onClick={scrolltop}>
             Navbar
           </Link>
           <button
@@ -54,19 +54,64 @@ export default function Navbarbody() {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav mr-auto ml-5">
               <li className="nav-item">
-                <Link className="nav-link" to="/">
+                <Link className="nav-link" onClick={scrolltop} to="/">
                   Home
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/about">
+                <Link className="nav-link" onClick={scrolltop} to="/about">
                   About
                 </Link>
               </li>
-              <li className="nav-item">
-                <Link className="nav-link" to="/services">
+              <li className="nav-item dropdown">
+                <Link
+                  className="nav-link"
+                  onClick={scrolltop}
+                  role="button"
+                  id="dropdownMenuLink"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
                   Services
                 </Link>
+                <div
+                  className="dropdown-menu bg-dark"
+                  style={{ borderRadius: "6px" }}
+                  aria-labelledby="dropdownMenuLink"
+                >
+                  <Link className="dropdown-item" to="/Service">
+                    Services
+                  </Link>
+                  <Link className="dropdown-item" to="/servicesdetails">
+                    ServicesDetails
+                  </Link>
+                </div>
+              </li>
+              <li className="nav-item dropdown">
+                <Link
+                  className="nav-link"
+                  onClick={scrolltop}
+                  role="button"
+                  id="dropdownMenuLink"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Blog
+                </Link>
+                <div
+                  className="dropdown-menu bg-dark"
+                  style={{ borderRadius: "6px" }}
+                  aria-labelledby="dropdownMenuLink"
+                >
+                  <Link className="dropdown-item" to="/blogpost">
+                    Blog List
+                  </Link>
+                  <Link className="dropdown-item" to="#">
+                    Blog
+                  </Link>
+                </div>
               </li>
               <li className="nav-item dropdown">
                 <Link
@@ -86,19 +131,18 @@ export default function Navbarbody() {
                   aria-labelledby="navbarDropdown"
                 >
                   <Link className="dropdown-item" href="#">
-                    Action
+                    Project
                   </Link>
                   <Link className="dropdown-item" href="#">
-                    Another action
+                    404 page
                   </Link>
-                  <div className="dropdown-divider"></div>
                   <Link className="dropdown-item" href="#">
-                    Something else here
+                    FAQ
                   </Link>
                 </div>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/">
+                <Link className="nav-link" onClick={scrolltop} to="/">
                   Contact
                 </Link>
               </li>

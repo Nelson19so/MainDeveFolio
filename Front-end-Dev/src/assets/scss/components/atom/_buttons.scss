@@ -111,3 +111,36 @@ nav {
     }
   }
 }
+
+// services page button get started
+.button-services-getstarted {
+  font-size: small;
+  background-color: transparent;
+  color: $background-white;
+  border: 1px solid $color-muted;
+  border-radius: 100px;
+  margin-top: 10px;
+
+  &:hover {
+    @include Button-hover;
+  }
+}
+
+// Btn 01 visit blog, 02 visit service
+.button-to-blog-details,
+.text-visit-service {
+  font-size: 12px;
+  border-radius: 50px;
+  color: $background-white;
+  border: 1px solid $color-muted;
+  background-color: transparent;
+
+  i {
+    font-size: 9px;
+  }
+
+  &:hover {
+    background-color: $primary-color-one;
+    color: $background-white;
+  }
+}

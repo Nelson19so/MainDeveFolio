@@ -18,7 +18,7 @@ export default function AboutLayout({ pagesheader }) {
           )}
 
           <div className="row container-service-grid">
-            <div className="col-sm-5 container-inner">
+            <div className="col-lg-5 container-inner">
               <div className="row imgage-grid">
                 <div className="container">
                   <div className="col-*-* w-100 img--">
@@ -31,7 +31,7 @@ export default function AboutLayout({ pagesheader }) {
               </div>
             </div>
             {/*  */}
-            <div className="col-sm right-container-about">
+            <div className="col-lg right-container-about">
               <div className="container p-1 pt-5 h-100">
                 <Itemheader
                   text="Who is Nelson?"
@@ -56,9 +56,9 @@ export default function AboutLayout({ pagesheader }) {
 
                 <div className="container mt-4">
                   <div className="row container--2 h-100">
-                    <div className="col-sm p-0 h-100 -container- pr-3">
+                    <div className="col-md p-0 h-100 -container- pr-3">
                       <div className="col-*-* top--">
-                        <i className="fa fa-code text-muted"></i>
+                        <i className="fa fa-laptop-code text-white"></i>
                       </div>
                       <div className="col-*-* mt-3">
                         <span className="text-muted">
@@ -76,9 +76,9 @@ export default function AboutLayout({ pagesheader }) {
                       </div>
                     </div>
                     {/*  */}
-                    <div className="col-sm p-0 h-100 -container- -about--2 pr-3">
+                    <div className="col-md p-0 h-100 -container- -about--2 pr-3">
                       <div className="col-*-* top--">
-                        <i className="fa fa-code text-muted"></i>
+                        <i className="fa fa-laptop-code text-white"></i>
                       </div>
                       <div className="col-*-* mt-3">
                         <span className="text-muted">
