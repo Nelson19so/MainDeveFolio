@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import Button from "../../components/atoms/buttons/Button";
-import serviceOne from "../../images/Services-1.jpg";
+import serviceOne from "../../../images/ServiceDetails.jpg";
 import Itemheader from "../header/Itemheader,";
 import Pagesheader from "../header/Pagesheader";
 

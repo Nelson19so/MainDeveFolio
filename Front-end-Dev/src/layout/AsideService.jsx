@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import imgOne from "../images/Services-2.jpg";
+import imgOne from "../../images/Drop-1.jpg";
 
 export default function AsideService() {
   return (

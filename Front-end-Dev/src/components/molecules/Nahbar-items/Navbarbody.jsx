@@ -66,7 +66,6 @@ export default function Navbarbody() {
               <li className="nav-item dropdown">
                 <Link
                   className="nav-link"
-                  onClick={scrolltop}
                   role="button"
                   id="dropdownMenuLink"
                   data-toggle="dropdown"
@@ -80,10 +79,18 @@ export default function Navbarbody() {
                   style={{ borderRadius: "6px" }}
                   aria-labelledby="dropdownMenuLink"
                 >
-                  <Link className="dropdown-item" to="/Service">
+                  <Link
+                    className="dropdown-item"
+                    to="/Service"
+                    onClick={scrolltop}
+                  >
                     Services
                   </Link>
-                  <Link className="dropdown-item" to="/servicesdetails">
+                  <Link
+                    className="dropdown-item"
+                    to="/servicesdetails"
+                    onClick={scrolltop}
+                  >
                     ServicesDetails
                   </Link>
                 </div>
@@ -91,7 +98,6 @@ export default function Navbarbody() {
               <li className="nav-item dropdown">
                 <Link
                   className="nav-link"
-                  onClick={scrolltop}
                   role="button"
                   id="dropdownMenuLink"
                   data-toggle="dropdown"
@@ -105,10 +111,14 @@ export default function Navbarbody() {
                   style={{ borderRadius: "6px" }}
                   aria-labelledby="dropdownMenuLink"
                 >
-                  <Link className="dropdown-item" to="/blogpost">
+                  <Link
+                    className="dropdown-item"
+                    to="/blogpost"
+                    onClick={scrolltop}
+                  >
                     Blog List
                   </Link>
-                  <Link className="dropdown-item" to="#">
+                  <Link className="dropdown-item" to="#" onClick={scrolltop}>
                     Blog
                   </Link>
                 </div>

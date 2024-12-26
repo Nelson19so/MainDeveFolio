@@ -1,7 +1,9 @@
 import Pagesheader from "../header/Pagesheader";
-import serviceOne from "../../images/zyro-O-Nemx50zDE-unsplash.jpg";
-import serviceTwo from "../../images/stats-bg.jpg";
 import Itemheader from "../header/Itemheader,";
+
+// Images
+import AboutOne from "../../../images/About/About-1.jpg";
+import AboutTwo from "../../../images/About/About-2.jpg";
 
 export default function AboutLayout({ pagesheader }) {
   return (
@@ -22,10 +24,10 @@ export default function AboutLayout({ pagesheader }) {
               <div className="row imgage-grid">
                 <div className="container">
                   <div className="col-*-* w-100 img--">
-                    <img src={serviceOne} alt="service-one" />
+                    <img src={AboutOne} alt="About-one" />
                   </div>
                   <div className="col-*-* w-100 img-- mt-4">
-                    <img src={serviceTwo} alt="Service-2" />
+                    <img src={AboutTwo} alt="About-2" />
                   </div>
                 </div>
               </div>

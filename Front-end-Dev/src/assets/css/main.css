@@ -261,7 +261,7 @@ nav .container ul li a:active, nav .container ul li a:focus, nav .container ul l
   width: 100vw;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url("../../../../public/home.jpg");
+  background-image: url("../../../../images/home.jpg");
 }
 .Home-page .backdrop-home {
   height: 100%;
@@ -578,7 +578,7 @@ nav .container ul li a:active, nav .container ul li a:focus, nav .container ul l
 .container-tricks-and-tips .container-items .container-items .container-tricks-and-tips .container-img {
   width: 25%;
   height: 100%;
-  background-image: url("../../../../../public/lee-campbell-DtDlVpy-vvQ-unsplash.jpg");
+  background-image: url("../../../../../images/coding-924920_1280.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -631,7 +631,7 @@ nav .container ul li a:active, nav .container ul li a:focus, nav .container ul l
   background-color: rgb(47, 47, 63);
 }
 .container-project-main .container-project-inner .row .container-items-main .container {
-  background-image: url("../../../../../public/home.jpg");
+  background-image: url("../../../../../images/home.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   height: 350px;

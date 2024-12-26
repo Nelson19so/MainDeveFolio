@@ -1,4 +1,4 @@
-import Blog1 from "../../images/stats-bg.jpg";
+import Blog1 from "../../../images/Drop-1.jpg";
 import Pagesheader from "../header/Pagesheader";
 
 export default function Project() {
