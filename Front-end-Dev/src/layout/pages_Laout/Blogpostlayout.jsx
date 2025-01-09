@@ -1,12 +1,13 @@
 import { Link } from "react-router-dom";
 import Button from "../../components/atoms/buttons/Button";
 import Pagesheader from "../header/Pagesheader";
+import mainImg from "../../../images/Drop.jpg";
 
 export default function Blogpostlayout({ pagesheader }) {
   return (
     <>
       <div className="container-tricks-and-tips shadow pt-5 pb-5">
-        <div className="container-fluid container-items">
+        <div className="container container-items">
           {pagesheader && (
             <Pagesheader
               title="List of my Blog Post List"
@@ -17,10 +18,11 @@ export default function Blogpostlayout({ pagesheader }) {
           )}
 
           {/*  */}
-
           <div className="container-items container">
             <div className="container-tricks-and-tips shadow">
-              <div className="container-img"></div>
+              <div className="container-img">
+                <img src={mainImg} alt="mainImg" />
+              </div>
               <div className="container-text--">
                 <span className="-">
                   <p className="p-1 mr-1">Business -</p>
@@ -44,7 +46,9 @@ export default function Blogpostlayout({ pagesheader }) {
             </div>
 
             <div className="container-tricks-and-tips shadow">
-              <div className="container-img"></div>
+              <div className="container-img">
+                <img src={mainImg} alt="mainImg" />
+              </div>
               <div className="container-text--">
                 <span className="-">
                   <p className="p-1 mr-1">Business -</p>
@@ -68,7 +72,9 @@ export default function Blogpostlayout({ pagesheader }) {
             </div>
 
             <div className="container-tricks-and-tips shadow">
-              <div className="container-img"></div>
+              <div className="container-img">
+                <img src={mainImg} alt="mainImg" />
+              </div>
               <div className="container-text--">
                 <span className="-">
                   <p className="p-1 mr-1">Business -</p>
@@ -92,7 +98,9 @@ export default function Blogpostlayout({ pagesheader }) {
             </div>
 
             <div className="container-tricks-and-tips shadow">
-              <div className="container-img"></div>
+              <div className="container-img">
+                <img src={mainImg} alt="mainImg" />
+              </div>
               <div className="container-text--">
                 <span className="-">
                   <p className="p-1 mr-1">Business -</p>

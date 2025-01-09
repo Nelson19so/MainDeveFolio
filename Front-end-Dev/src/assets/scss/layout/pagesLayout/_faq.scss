@@ -8,7 +8,7 @@
         .container-items-faq {
           cursor: pointer;
           background-color: $primary-color-one-light;
-          transition: 1s;
+          border-radius: 4px;
 
           .container-items {
             display: none;

@@ -1,0 +1,36 @@
+.container-layout-blogdetails {
+  background-color: $primary-color-two-lighter;
+  width: 100vw;
+
+  .container {
+    .container-img-blogDetails {
+      width: 100%;
+      height: 80vh;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    .container--- {
+      .container-details {
+        article {
+          .container-2 {
+            .row {
+              .container-main {
+                .rounded {
+                  border: 1px solid $color-muted;
+                  text-align: center;
+                  padding: 30px 25px;
+                  font-size: 25px;
+                  max-width: 100px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

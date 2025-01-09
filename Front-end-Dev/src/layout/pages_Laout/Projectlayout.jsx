@@ -1,17 +1,19 @@
 import Blog1 from "../../../images/Drop-1.jpg";
 import Pagesheader from "../header/Pagesheader";
 
-export default function Project() {
+export default function Projectlayout({ displayheader }) {
   return (
     <>
       <div className="container-project-main pt-5 pb-5">
         <div className="container container-project-inner">
-          <Pagesheader
-            classNameSubtitle="text-muted text-center"
-            classNameTitle="text-white text-center"
-            title="My Complete Project"
-            subtitle="My Project"
-          />
+          {displayheader && (
+            <Pagesheader
+              classNameSubtitle="text-muted text-center"
+              classNameTitle="text-white text-center"
+              title="My Complete Project"
+              subtitle="My Project"
+            />
+          )}
 
           <div className="row">
             <div className="col-sm container-items-main">

@@ -48,7 +48,7 @@ export default function AboutLayout({ pagesheader }) {
                   </span>
                 </div>
 
-                <div className="mt-4">
+                <div className="mt-4 container--">
                   <span className="text-muted">
                     On this blog, I'll be sharing my thoughts, experiences, and
                     knowledge on web development, from the basics to advanced
@@ -62,7 +62,7 @@ export default function AboutLayout({ pagesheader }) {
                       <div className="col-*-* top--">
                         <i className="fa fa-laptop-code text-white"></i>
                       </div>
-                      <div className="col-*-* mt-3">
+                      <div className="col-*-* mt-3 container-text-main--">
                         <span className="text-muted">
                           <Itemheader text="About One" className="text-white" />
                           Hi, I'm Nelson, a web developer with a passion for
@@ -82,7 +82,7 @@ export default function AboutLayout({ pagesheader }) {
                       <div className="col-*-* top--">
                         <i className="fa fa-laptop-code text-white"></i>
                       </div>
-                      <div className="col-*-* mt-3">
+                      <div className="col-*-* mt-3 container-text-main--">
                         <span className="text-muted">
                           <Itemheader text="About Two" className="text-white" />
                           Welcome to my web development blog, a resource for web

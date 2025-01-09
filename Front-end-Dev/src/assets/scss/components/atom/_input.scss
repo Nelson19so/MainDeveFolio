@@ -1,17 +1,39 @@
-.container-input {
-  .email-subscribe {
-    padding: 1.5% 3%;
-    width: 40%;
-    background-color: transparent;
-    border: 0.5px solid $color-muted;
-    outline: none;
-    color: $background-white;
-    font-size: small;
+// Subscribe input for email form.
+.email-subscribe {
+  padding: 1.5% 3%;
+  width: 40%;
+  background-color: transparent;
+  border: 0.5px solid $color-muted;
+  outline: none;
+  color: $background-white;
+  font-size: small;
 
-    @media only screen and (max-width: 768px) {
-      padding: 5% 0;
-      padding-left: 10%;
-      width: 100%;
-    }
+  @media only screen and (max-width: 768px) {
+    padding: 5% 0;
+    padding-left: 10%;
+    width: 100%;
   }
+}
+
+// Contact page input
+.contact-input,
+.contact-input-desc {
+  width: 100%;
+  padding: 1.5% 3%;
+  background-color: transparent;
+  border: 0.5px solid $color-muted;
+  outline: none;
+  color: $background-white;
+  font-size: small;
+
+  @media only screen and (max-width: 768px) {
+    padding: 5% 0;
+    padding-left: 10%;
+    width: 100%;
+  }
+}
+
+// input desc for contact page
+.contact-input-desc {
+  height: 30vh;
 }

@@ -1,10 +1,10 @@
 export default function Itemheader({ text, textTwo, className }) {
   return (
     <>
-      <div>
+      <div className="header-">
         <span>
           <span className="text-muted">{textTwo}</span>
-          <h3 className={className}>{text}</h3>
+          <h1 className={className}>{text}</h1>
         </span>
       </div>
     </>

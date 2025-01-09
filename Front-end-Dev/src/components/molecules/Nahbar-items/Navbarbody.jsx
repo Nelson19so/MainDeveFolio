@@ -30,7 +30,7 @@ export default function Navbarbody() {
       <nav
         className={
           FixedNavbar
-            ? "navbar navbar-expand-lg navbar-light w-100 Navbar-fixed pt-3 pb-3 shadow"
+            ? "navbar navbar-expand-lg navbar-light w-100 Navbar-fixed pt-3 pb-3 pl-0 pr-0 shadow"
             : "navbar navbar-expand-lg navbar-light w-100 Navbar-expand"
         }
         ref={Navbar}
@@ -39,6 +39,7 @@ export default function Navbarbody() {
           <Link className="navbar-brand mr-5" onClick={scrolltop}>
             Navbar
           </Link>
+          <Navbardropdown className="d-sm-block d-lg-none" />
           <button
             className="navbar-toggler bg-light"
             type="button"
@@ -116,10 +117,14 @@ export default function Navbarbody() {
                     to="/blogpost"
                     onClick={scrolltop}
                   >
-                    Blog List
+                    Blog Post
                   </Link>
-                  <Link className="dropdown-item" to="#" onClick={scrolltop}>
-                    Blog
+                  <Link
+                    className="dropdown-item"
+                    to="/Blogdetails"
+                    onClick={scrolltop}
+                  >
+                    Blog Details
                   </Link>
                 </div>
               </li>
@@ -140,19 +145,22 @@ export default function Navbarbody() {
                   style={{ borderRadius: "6px" }}
                   aria-labelledby="navbarDropdown"
                 >
-                  <Link className="dropdown-item" href="#">
+                  <Link className="dropdown-item" to="/project">
                     Project
                   </Link>
-                  <Link className="dropdown-item" href="#">
+                  <Link className="dropdown-item" to="/testimonial">
+                    Testimonial
+                  </Link>
+                  <Link className="dropdown-item" to="404pagenotfound">
                     404 page
                   </Link>
-                  <Link className="dropdown-item" href="#">
+                  {/* <Link className="dropdown-item" to="#">
                     FAQ
-                  </Link>
+                  </Link> */}
                 </div>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" onClick={scrolltop} to="/">
+                <Link className="nav-link" onClick={scrolltop} to="/contact">
                   Contact
                 </Link>
               </li>
@@ -160,11 +168,13 @@ export default function Navbarbody() {
 
             {/*  */}
             <Navbardropdown />
-            <Button
-              text="Hire me"
-              className="rounded-pill"
-              showiconThree={true}
-            />
+            <Link to="/contact">
+              <Button
+                text="Hire me"
+                className="rounded-pill"
+                showiconThree={true}
+              />
+            </Link>
           </div>
         </div>
       </nav>

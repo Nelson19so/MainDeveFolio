@@ -7,20 +7,6 @@
   }
 }
 
-// This button returns the user back to their previous page
-.go-back-button {
-  button {
-    background-color: $background-white-darker;
-    outline: none;
-    padding: 5px 10px;
-    font-size: smaller;
-
-    &:hover {
-      background-color: $background-white-darker-two;
-    }
-  }
-}
-
 // General Design for button
 button {
   padding: 12px 20px;
@@ -33,8 +19,8 @@ button {
   // button for Download resume
   .button- {
     button {
-      padding: 20px 7%;
-      font-size: small;
+      padding: 25px 7%;
+      font-size: 13px;
       border-radius: 50px;
       background-color: transparent;
       color: $background-white;
@@ -56,7 +42,7 @@ button {
         border-radius: 100px;
         background-color: transparent;
         color: $background-white;
-        border: 3px solid $color-muted;
+        border: 6px solid $color-muted;
 
         &:hover {
           @include Button-hover;
@@ -92,23 +78,21 @@ nav {
 }
 
 // subscibe button for footer
-.container-input {
-  button {
-    background-color: $primary-color-one;
+.button-subscribe {
+  background-color: $primary-color-one;
+  color: $background-white;
+  border: 1px solid $color-muted;
+  padding: 1% 3%;
+  font-size: small;
+  border: none;
+
+  @media only screen and (max-width: 768px) {
+    display: none;
+  }
+
+  &:hover {
     color: $background-white;
-    border: 1px solid $color-muted;
-    padding: 1% 3%;
-    font-size: small;
-    border: none;
-
-    @media only screen and (max-width: 768px) {
-      display: none;
-    }
-
-    &:hover {
-      color: $background-white;
-      @include Button-hover;
-    }
+    @include Button-hover;
   }
 }
 
@@ -126,9 +110,15 @@ nav {
   }
 }
 
-// Btn 01 visit blog, 02 visit service
+// Btn theme for
+// 01 visit blog,
+// 02 visit service,
+// 03 btn page not found
+// 05 button visit faq
 .button-to-blog-details,
-.text-visit-service {
+.text-visit-service,
+.btn-pageNotFound,
+.button-visit-faq {
   font-size: 12px;
   border-radius: 50px;
   color: $background-white;
@@ -143,4 +133,11 @@ nav {
     background-color: $primary-color-one;
     color: $background-white;
   }
+}
+
+// Button submit form for contact-page
+.button-contact,
+.button-contact-disabled {
+  border: 1px solid $color-muted;
+  margin-top: 10px;
 }

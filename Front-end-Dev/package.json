@@ -11,6 +11,7 @@
     "compile:sass": "sass src/assets/scss/main.scss src/assets/css/main.css -w"
   },
   "dependencies": {
+    "@fortawesome/react-fontawesome": "^0.2.2",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-router-dom": "^7.0.2",

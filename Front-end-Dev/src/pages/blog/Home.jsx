@@ -7,9 +7,8 @@ import AboutLayout from "../../layout/pages_Laout/AboutLayout";
 import Blogpostlayout from "../../layout/pages_Laout/Blogpostlayout";
 import Client from "../../layout/pages_Laout/Client";
 import Faq from "../../layout/pages_Laout/faq";
-import Project from "../../layout/pages_Laout/Project";
+import Projectlayout from "../../layout/pages_Laout/Projectlayout";
 import Servicecorousel from "../../layout/pages_Laout/Servicecorousel";
-import Servicelayout from "../../layout/pages_Laout/Servicelayout";
 
 function Home() {
   document.title = "Nelson Website dev Home page";
@@ -21,8 +20,9 @@ function Home() {
           <div className="container">
             <div className="row">
               <div className="col-sm pt mt-2 left-container">
-                <h2 className="text-white">Welcome to my Web Dev page</h2>
-                <div className="ml-5 mt-3">
+                <h1 className="text-white">Hello! i'm</h1>
+                <h2 className="text-white">Nelson Benzo</h2>
+                <div className="ml- mt-3">
                   <span>
                     I am <code>Nelson</code> passionate {""}
                     <code>web dev dedicated</code> to helping businesses like
@@ -30,12 +30,12 @@ function Home() {
                   </span>
                 </div>
 
-                <div className="container-btn-- mt-4">
+                <div className="container-btn-- mt-5 mb-5">
                   <div className="button- w-100">
                     <Button text="Download Resume" showicon={true} />
                   </div>
 
-                  <div className="w-100 mt-4 button-two ml-5">
+                  <div className="w-100 mt-5 button-two ml-">
                     <span>
                       <Button showiconTwo={true} />{" "}
                       <p className="text-white">Watch Video</p>
@@ -53,10 +53,9 @@ function Home() {
       </div>
       <div>
         <AboutLayout pagesheader={true} />
-        {/* <Servicelayout pageheader={true} /> */}
         <Servicecorousel pageheader={true} />
         <Client />
-        <Project />
+        <Projectlayout displayheader={true} />
         <Blogpostlayout pagesheader={true} DisplayButton={true} />
         <Faq />
         <Footer />

@@ -1,52 +1,63 @@
 import Itemheader from "../header/Itemheader,";
 import Pagesheader from "../header/Pagesheader";
 
-export default function Testimonial() {
+export default function Testimoniallayout({ showcarousel, showpagesheader }) {
   return (
     <>
       <div className="container-testimonials">
         <div className="container pb-5 pt-5">
           <div>
-            <Pagesheader
-              classNameSubtitle="text-muted text-center"
-              classNameTitle="text-white text-center"
-              title="What my clients thinks about me"
-              subtitle="Testimonials"
-            />
+            {showpagesheader && (
+              <Pagesheader
+                classNameSubtitle="text-muted text-center"
+                classNameTitle="text-white text-center"
+                title="What my clients thinks about me"
+                subtitle="Testimonials"
+              />
+            )}
           </div>
 
           <div
-            className="container-testimonial-items mt-5 carousel slide carousel-dark text-center"
+            className={
+              showcarousel
+                ? "container-testimonial-items mt-5 carousel slide carousel-dark text-center"
+                : "container-testimonial-items text-center mt-5"
+            }
             id="carouselExampleControls"
             data-ride="carousel"
           >
-            <a
-              class="carousel-control-prev"
-              href="#carouselExampleControls"
-              role="button"
-              data-slide="prev"
-            >
-              <span
-                class="carousel-control-prev-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="sr-only">Previous</span>
-            </a>
-            <a
-              class="carousel-control-next"
-              href="#carouselExampleControls"
-              role="button"
-              data-slide="next"
-            >
-              <span
-                class="carousel-control-next-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="sr-only">Next</span>
-            </a>
+            {showcarousel && (
+              <>
+                <a
+                  className="carousel-control-prev"
+                  href="#carouselExampleControls"
+                  role="button"
+                  data-slide="prev"
+                >
+                  <span
+                    className="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span className="sr-only">Previous</span>
+                </a>
+                <a
+                  className="carousel-control-next"
+                  href="#carouselExampleControls"
+                  role="button"
+                  data-slide="next"
+                >
+                  <span
+                    className="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span className="sr-only">Next</span>
+                </a>
+              </>
+            )}
+
             {/* inner */}
-            <div class="carousel-inner py-4">
-              <div class="carousel-item active">
+            <div className="carousel-inner py-4">
+              <div className={showcarousel && "carousel-item active"}>
                 <div className="row container--items">
                   <div className="col-lg-4 h-100 mb-3">
                     <div className="container h-100 p-4 shadow-lg">
@@ -83,7 +94,13 @@ export default function Testimonial() {
                     </div>
                   </div>
 
-                  <div className="col-lg-4 d-none d-lg-block h-100 mb-3">
+                  <div
+                    className={
+                      showcarousel
+                        ? "col-lg-4 d-none d-lg-block h-100 mb-3"
+                        : "col-lg-4 d-block h-100 mb-3"
+                    }
+                  >
                     <div className="container h-100 p-4 shadow-lg">
                       <center>
                         <div className="top-container">
@@ -118,7 +135,13 @@ export default function Testimonial() {
                     </div>
                   </div>
 
-                  <div className="col-lg-4 d-none d-lg-block h-100 mb-3">
+                  <div
+                    className={
+                      showcarousel
+                        ? "col-lg-4 d-none d-lg-block h-100 mb-3"
+                        : "col-lg-4 d-block h-100 mb-3"
+                    }
+                  >
                     <div className="container h-100 p-4 shadow-lg">
                       <center>
                         <div className="top-container">
@@ -155,8 +178,8 @@ export default function Testimonial() {
                 </div>
               </div>
 
-              <div class="carousel-item">
-                <div className="row container--items">
+              <div className={showcarousel && "carousel-item"}>
+                <div className="row container--items mt-3">
                   <div className="col-lg-4 h-100 mb-3">
                     <div className="container h-100 p-4 shadow-lg">
                       <center>
@@ -192,7 +215,13 @@ export default function Testimonial() {
                     </div>
                   </div>
 
-                  <div className="col-lg-4 d-none d-lg-block h-100 mb-3">
+                  <div
+                    className={
+                      showcarousel
+                        ? "col-lg-4 d-none d-lg-block h-100 mb-3"
+                        : "col-lg-4 d-block h-100 mb-3"
+                    }
+                  >
                     <div className="container h-100 p-4 shadow-lg">
                       <center>
                         <div className="top-container">
@@ -227,7 +256,13 @@ export default function Testimonial() {
                     </div>
                   </div>
 
-                  <div className="col-lg-4 d-none d-lg-block h-100 mb-3">
+                  <div
+                    className={
+                      showcarousel
+                        ? "col-lg-4 d-none d-lg-block h-100 mb-3"
+                        : "col-lg-4 d-block h-100 mb-3"
+                    }
+                  >
                     <div className="container h-100 p-4 shadow-lg">
                       <center>
                         <div className="top-container">
@@ -264,7 +299,7 @@ export default function Testimonial() {
                 </div>
               </div>
 
-              <div class="carousel-item">
+              <div className="carousel-item">
                 <div className="row container--items">
                   <div className="col-lg-4 h-100 mb-3">
                     <div className="container h-100 p-4 shadow-lg">
@@ -301,7 +336,13 @@ export default function Testimonial() {
                     </div>
                   </div>
 
-                  <div className="col-lg-4 d-none d-lg-block h-100 mb-3">
+                  <div
+                    className={
+                      showcarousel
+                        ? "col-lg-4 d-none d-lg-block h-100 mb-3"
+                        : "col-lg-4 d-block h-100 mb-3"
+                    }
+                  >
                     <div className="container h-100 p-4 shadow-lg">
                       <center>
                         <div className="top-container">
@@ -336,7 +377,13 @@ export default function Testimonial() {
                     </div>
                   </div>
 
-                  <div className="col-lg-4 d-none d-lg-block h-100 mb-3">
+                  <div
+                    className={
+                      showcarousel
+                        ? "col-lg-4 d-none d-lg-block h-100 mb-3"
+                        : "col-lg-4 d-block h-100 mb-3"
+                    }
+                  >
                     <div className="container h-100 p-4 shadow-lg">
                       <center>
                         <div className="top-container">

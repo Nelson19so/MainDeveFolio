@@ -1,0 +1,29 @@
+.container-404-page {
+  background-color: $primary-color-two;
+
+  .container {
+    .container-pageNotFound {
+      .row {
+        .text-container-404 {
+          position: relative;
+
+          h1 {
+            font-size: 70px;
+            font-weight: 700;
+          }
+
+          img {
+            width: 100%;
+          }
+          .back-drop-404 {
+            width: 100%;
+            height: 100%;
+            top: 0;
+            position: absolute;
+            background-color: rgba(35, 35, 48, 0.9);
+          }
+        }
+      }
+    }
+  }
+}

@@ -19,11 +19,17 @@
 
       .row {
         .left-container {
-          h2 {
+          h2,
+          h1 {
             font-weight: 700;
-            font-size: 47px;
+            font-size: 77px;
+            font-family: "Times New Roman", Times, serif;
+          }
+          h1 {
+            font-size: 60px;
           }
           span {
+            font-size: 17px;
             color: $color-muted;
           }
         }

@@ -1,6 +1,6 @@
 .container-project-main {
   width: 100vw;
-  background-color: $primary-color-one-light;
+  background-color: $primary-color-one;
 
   .container-project-inner {
     .row {
@@ -23,6 +23,13 @@
               height: 100%;
             }
           }
+        }
+
+        h5 {
+          font-size: 30px;
+        }
+        p {
+          font-size: 20px;
         }
       }
     }

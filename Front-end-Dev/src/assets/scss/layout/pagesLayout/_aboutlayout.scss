@@ -16,8 +16,17 @@
 
     .right-container-about {
       .container {
+        .container-- {
+          font-size: 18px;
+        }
+
         .container--2 {
           .-container- {
+            .container-text-main-- {
+              span {
+                font-size: 18px;
+              }
+            }
             .top-- {
               // .container-code {
               //   border: 1px solid $color-muted;

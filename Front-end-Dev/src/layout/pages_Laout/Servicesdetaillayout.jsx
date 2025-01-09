@@ -157,7 +157,7 @@ export default function Servicesdetaillayout() {
                     className="text-white mt-5"
                     text="Why choose me?"
                   />
-                  <div className="cotainer-text">
+                  <div className="container-text">
                     <p className="text-muted mt-3">
                       Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                       Distinctio, qui, repellendus porro veritatis dicta
@@ -171,11 +171,13 @@ export default function Servicesdetaillayout() {
                         </div>
                         <div className="col-sm">
                           <span className="text-muted">
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Totam commodi adipisci assumenda blanditiis
-                            aliquid. Iusto quos a, deserunt excepturi libero ut
-                            blanditiis eligendi sint quisquam ad non cum amet
-                            ratione?
+                            <p>
+                              Lorem ipsum dolor sit amet consectetur adipisicing
+                              elit. Totam commodi adipisci assumenda blanditiis
+                              aliquid. Iusto quos a, deserunt excepturi libero
+                              ut blanditiis eligendi sint quisquam ad non cum
+                              amet ratione?
+                            </p>
                           </span>
                         </div>
                       </div>

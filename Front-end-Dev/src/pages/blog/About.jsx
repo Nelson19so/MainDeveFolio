@@ -2,7 +2,7 @@ import Footer from "../../layout/footer/Footer";
 import AboutLayout from "../../layout/pages_Laout/AboutLayout";
 import Breadcrumbs from "../../layout/pages_Laout/Breadcrumbs";
 import Client from "../../layout/pages_Laout/Client";
-import Testimonial from "../../layout/pages_Laout/Testimonial";
+import Testimoniallayout from "../../layout/pages_Laout/Testimoniallayout";
 
 export default function About() {
   document.title = "Nelson website Dev About page";
@@ -15,7 +15,7 @@ export default function About() {
           breadcrumbtitle="About Me"
         />
         <AboutLayout />
-        <Testimonial />
+        <Testimoniallayout showcarousel={true} showpagesheader={true} />
         <Client />
         <Footer />
       </div>
