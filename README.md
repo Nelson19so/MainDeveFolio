@@ -37,3 +37,4 @@ this Respository is for my personnal blog web Development and it carries informa
 
 - Ensure you have created a main root folder to structure the back-end and front-end folder before extracting this project
 - The Front-end uses Vite, soo ensure to install vite if any error occure, to install vite simply run "npm install vite".
+
