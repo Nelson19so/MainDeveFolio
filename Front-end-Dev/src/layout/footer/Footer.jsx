@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import Pagesheader from "../header/Pagesheader";
-import Subscribeform from "../../components/molecules/forms/subscribeform";
+import Subscribeform from "../../components/molecules/forms/Subscribeform";
 import { useState } from "react";
 
 // footer components layout for all blog web pages
