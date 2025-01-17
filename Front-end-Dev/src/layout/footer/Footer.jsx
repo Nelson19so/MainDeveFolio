@@ -44,7 +44,7 @@ export default function Footer() {
                         className="Icon"
                         onClick={() => handlecopy("nelsonsomto19@gmail.com")}
                       >
-                        <FontAwesomeIcon icon="fa fa-phone" />
+                        <i className="fas fa-envelope text-white"></i>
                       </Link>
                       <div className="col text-white mt-3">
                         <h3>nelsonsomto19@gmail.com</h3>
