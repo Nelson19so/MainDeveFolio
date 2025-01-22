@@ -35,7 +35,7 @@ export default function Footer() {
                 <Subscribeform />
               </div>
 
-              <div className="container-main-contact mt-5 container pr-3 pl-3">
+              <div className="container-main-contact mt-5 container pr-3 pl-3 ---2">
                 <div className="row">
                   <div className="col-lg container-items-footer">
                     <div className="row">

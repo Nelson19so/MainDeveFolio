@@ -4,6 +4,7 @@ import Breadcrumbs from "../../layout/pages_Laout/Breadcrumbs";
 import Servicelayout from "../../layout/pages_Laout/Servicelayout";
 
 export default function Service() {
+  document.title = "Nelson website Dev service page";
   return (
     <>
       <div>

@@ -3,6 +3,7 @@ import Breadcrumbs from "../../layout/pages_Laout/Breadcrumbs";
 import Projectlayout from "../../layout/pages_Laout/Projectlayout";
 
 export default function Project() {
+  document.title = "Nelson website Dev Project page";
   return (
     <>
       <div className="container-project">
