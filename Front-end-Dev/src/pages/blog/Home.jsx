@@ -26,15 +26,15 @@ function Home() {
                   <span>
                     I am <code>Nelson</code> passionate {""}
                     <code>web dev dedicated</code> to helping businesses like
-                    yours succeed onlne
+                    yours succeed and grow online
                   </span>
                 </div>
 
                 <div className="container-btn-- mt-5 mb-5">
+                  ``
                   <div className="button- w-100">
                     <Button text="Download Resume" showicon={true} />
                   </div>
-
                   <div className="w-100 mt-5 button-two ml-">
                     <span>
                       <Button showiconTwo={true} />{" "}
@@ -55,8 +55,12 @@ function Home() {
         <AboutLayout pagesheader={true} />
         <Servicecorousel pageheader={true} />
         <Client />
-        <Projectlayout displayheader={true} />
-        <Blogpostlayout pagesheader={true} DisplayButton={true} />
+        <Projectlayout displayheader={true} displayitems={false} />
+        <Blogpostlayout
+          pagesheader={true}
+          DisplayButton={true}
+          displayblogs={false}
+        />
         <Faq />
         <Footer />
         <Newsletter />

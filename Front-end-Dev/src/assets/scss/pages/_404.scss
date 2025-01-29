@@ -1,5 +1,7 @@
+@use "../base/colors" as color;
+
 .container-404-page {
-  background-color: $primary-color-two;
+  background-color: color.$primary-color-two;
 
   .container {
     .container-pageNotFound {

@@ -1,7 +1,9 @@
+@use "../../base/colors" as color;
+
 .container-tricks-and-tips {
   overflow: hidden;
   width: 100vw;
-  background-color: $primary-color-two;
+  background-color: color.$primary-color-two;
 
   .container-items {
     width: 100%;
@@ -10,7 +12,7 @@
       .container-tricks-and-tips {
         width: 100%;
         height: 40vh;
-        background-color: $primary-color-one-light;
+        background-color: color.$primary-color-one-light;
         display: flex;
         margin-top: 4%;
         justify-content: space-between;
@@ -27,6 +29,10 @@
         .container-img {
           width: 25%;
           height: 100%;
+
+          @media only screen and (max-width: 976px) {
+            width: 100%;
+          }
 
           img {
             width: 100%;
@@ -48,15 +54,15 @@
             font-size: 15px;
 
             .p-1 {
-              color: $background-white;
+              color: color.$background-white;
               float: left;
             }
             .p-2 {
-              color: $background-white-darker;
+              color: color.$background-white-darker;
             }
           }
           h6 {
-            color: $background-white;
+            color: color.$background-white;
             font-weight: 600;
             font-size: 25px;
           }

@@ -1,16 +1,16 @@
-@import "./footer";
-@import "./asideservice";
+@use "./footer" as footer;
+@use "./asideservice" as asideservice;
 
-@import "./pagesLayout/aboutlayout";
-@import "./pagesLayout/breadcrumbs";
-@import "./pagesLayout/testimonial";
-@import "./pagesLayout/client";
-@import "./pagesLayout/servicesdetaillayout";
-@import "./pagesLayout/serviceslayout";
-@import "./pagesLayout/blogpost";
-@import "./pagesLayout/project";
-@import "./pagesLayout/faq";
-@import "./pagesLayout/contactlayout";
-@import "./pagesLayout/blogdetails";
+@use "./pagesLayout/aboutlayout" as aboutlayout;
+@use "./pagesLayout/breadcrumbs" as breadcrumbs;
+@use "./pagesLayout/testimonial" as testimonial;
+@use "./pagesLayout/client" as client;
+@use "./pagesLayout/servicesdetaillayout" as servicedetaillayout;
+@use "./pagesLayout/serviceslayout" as servicelayout;
+@use "./pagesLayout/blogpost" as blogpages;
+@use "./pagesLayout/project" as project;
+@use "./pagesLayout/faq" as faq;
+@use "./pagesLayout/contactlayout" as contactlayout;
+@use "./pagesLayout/blogdetails" as blogdetails;
 
-@import "./pagesLayout/header/Pagesheader";
+@use "./pagesLayout/header/Pagesheader" as pagesheader;

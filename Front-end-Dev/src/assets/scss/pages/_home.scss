@@ -1,3 +1,5 @@
+@use "../base/colors" as color;
+
 .Home-page {
   overflow: hidden;
   height: auto;
@@ -30,7 +32,7 @@
           }
           span {
             font-size: 17px;
-            color: $color-muted;
+            color: color.$color-muted;
           }
         }
       }

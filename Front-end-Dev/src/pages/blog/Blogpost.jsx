@@ -8,12 +8,12 @@ export default function Blogpost() {
     <>
       <div className="container-blogpost-main">
         <Breadcrumbs
-          breadcrumbtitle="Blog List"
+          breadcrumbtitle="Blog Post"
           textOne="Blog"
-          textTwo="Blog List"
+          textTwo="Blog Post"
           pagesheader={false}
         />
-        <Blogpostlayout />
+        <Blogpostlayout displayblogs={true} />
         <Footer />
       </div>
     </>

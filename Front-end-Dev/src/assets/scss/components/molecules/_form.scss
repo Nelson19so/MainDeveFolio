@@ -1,0 +1,6 @@
+@use "../../base/colors" as color;
+
+.container-testimonial-form {
+  background-color: color.$primary-color-one;
+  padding: 80px 10%;
+}

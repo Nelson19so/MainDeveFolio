@@ -1,13 +1,15 @@
+@use "../../base/colors" as color;
+
 .container-faq {
   width: 100vw;
-  background-color: $primary-color-one;
+  background-color: color.$primary-color-one;
 
   .container {
     .row {
       .container-faq- {
         .container-items-faq {
           cursor: pointer;
-          background-color: $primary-color-one-light;
+          background-color: color.$primary-color-one-light;
           border-radius: 4px;
 
           .container-items {

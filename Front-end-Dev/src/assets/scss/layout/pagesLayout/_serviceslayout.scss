@@ -1,14 +1,16 @@
+@use "../../base/colors" as color;
+
 .container-service-layout-- {
   width: 100vw;
-  background-color: $primary-color-two-lighter;
+  background-color: color.$primary-color-two-lighter;
 
   .service-container-inner- {
     .row {
       .container-- {
-        margin-bottom: 5%;
+        margin-bottom: 3%;
 
         .container {
-          background-color: $primary-color-one-light;
+          background-color: color.$primary-color-one-light;
           height: 400px;
 
           .header-text {

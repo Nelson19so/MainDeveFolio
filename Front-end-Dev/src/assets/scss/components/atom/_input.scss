@@ -1,11 +1,13 @@
+@use "../../base/colors" as color;
+
 // Subscribe input for email form.
 .email-subscribe {
   padding: 1.5% 3%;
   width: 40%;
   background-color: transparent;
-  border: 0.5px solid $color-muted;
+  border: 0.5px solid color.$color-muted;
   outline: none;
-  color: $background-white;
+  color: color.$background-white;
   font-size: small;
 
   @media only screen and (max-width: 768px) {
@@ -17,13 +19,15 @@
 
 // Contact page input
 .contact-input,
+.testimonial-input,
+.testimonial-input-desc,
 .contact-input-desc {
   width: 100%;
   padding: 1.5% 3%;
   background-color: transparent;
-  border: 0.5px solid $color-muted;
+  border: 0.5px solid color.$color-muted;
   outline: none;
-  color: $background-white;
+  color: color.$background-white;
   font-size: small;
 
   @media only screen and (max-width: 768px) {
@@ -34,6 +38,7 @@
 }
 
 // input desc for contact page
-.contact-input-desc {
+.contact-input-desc,
+.testimonial-input-desc {
   height: 30vh;
 }

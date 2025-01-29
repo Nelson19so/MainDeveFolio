@@ -1,3 +1,6 @@
+@use "../../base/colors" as color;
+@use "../../config/mixin" as mixin;
+
 // This button closes the modal for Subscribe News Letter
 .back-drop.News-letter {
   button {
@@ -23,11 +26,11 @@ button {
       font-size: 13px;
       border-radius: 50px;
       background-color: transparent;
-      color: $background-white;
-      border: 1px solid $color-muted;
+      color: color.$background-white;
+      border: 1px solid color.$color-muted;
 
       &:hover {
-        @include Button-hover;
+        @include mixin.Button-hover;
       }
     }
   }
@@ -41,11 +44,11 @@ button {
         padding: 29px 35px;
         border-radius: 100px;
         background-color: transparent;
-        color: $background-white;
-        border: 6px solid $color-muted;
+        color: color.$background-white;
+        border: 6px solid color.$color-muted;
 
         &:hover {
-          @include Button-hover;
+          @include mixin.Button-hover;
         }
       }
       p {
@@ -63,11 +66,11 @@ nav {
     button {
       font-size: small;
       background-color: transparent;
-      color: $background-white;
-      border: 1px solid $color-muted;
+      color: color.$background-white;
+      border: 1px solid color.$color-muted;
 
       &:hover {
-        @include Button-hover;
+        @include mixin.Button-hover;
       }
 
       i {
@@ -79,9 +82,9 @@ nav {
 
 // subscibe button for footer
 .button-subscribe {
-  background-color: $primary-color-one;
-  color: $background-white;
-  border: 1px solid $color-muted;
+  background-color: color.$primary-color-one;
+  color: color.$background-white;
+  border: 1px solid color.$color-muted;
   padding: 1% 3%;
   font-size: small;
   border: none;
@@ -91,8 +94,8 @@ nav {
   }
 
   &:hover {
-    color: $background-white;
-    @include Button-hover;
+    color: color.$background-white;
+    @include mixin.Button-hover;
   }
 }
 
@@ -100,13 +103,13 @@ nav {
 .button-services-getstarted {
   font-size: small;
   background-color: transparent;
-  color: $background-white;
-  border: 1px solid $color-muted;
+  color: color.$background-white;
+  border: 1px solid color.$color-muted;
   border-radius: 100px;
   margin-top: 10px;
 
   &:hover {
-    @include Button-hover;
+    @include mixin.Button-hover;
   }
 }
 
@@ -118,11 +121,12 @@ nav {
 .button-to-blog-details,
 .text-visit-service,
 .btn-pageNotFound,
+.btn-visit-web,
 .button-visit-faq {
   font-size: 12px;
   border-radius: 50px;
-  color: $background-white;
-  border: 1px solid $color-muted;
+  color: color.$background-white;
+  border: 1px solid color.$color-muted;
   background-color: transparent;
 
   i {
@@ -130,14 +134,14 @@ nav {
   }
 
   &:hover {
-    background-color: $primary-color-one;
-    color: $background-white;
+    background-color: color.$primary-color-one;
+    color: color.$background-white;
   }
 }
 
 // Button submit form for contact-page
 .button-contact,
 .button-contact-disabled {
-  border: 1px solid $color-muted;
+  border: 1px solid color.$color-muted;
   margin-top: 10px;
 }

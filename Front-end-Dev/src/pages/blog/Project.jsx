@@ -12,7 +12,7 @@ export default function Project() {
           textOne="Pages"
           textTwo="Project"
         />
-        <Projectlayout displayheader={false} />
+        <Projectlayout displayheader={false} displayitems={true} />
         <Footer />
       </div>
     </>

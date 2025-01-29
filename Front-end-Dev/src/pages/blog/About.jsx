@@ -15,7 +15,11 @@ export default function About() {
           breadcrumbtitle="About Me"
         />
         <AboutLayout />
-        <Testimoniallayout showcarousel={true} showpagesheader={true} />
+        <Testimoniallayout
+          showcarousel={true}
+          showpagesheader={true}
+          closePptst={false}
+        />
         <Client />
         <Footer />
       </div>

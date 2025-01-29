@@ -1,3 +1,4 @@
+import Testimonialform from "../../components/molecules/forms/Testimonialform";
 import Footer from "../../layout/footer/Footer";
 import Breadcrumbs from "../../layout/pages_Laout/Breadcrumbs";
 import Testimoniallayout from "../../layout/pages_Laout/Testimoniallayout";
@@ -12,7 +13,12 @@ function Testimonial() {
           textTwo="Testimonial"
           breadcrumbtitle="Testimonial"
         />
-        <Testimoniallayout showcarousel={false} showpagesheader={false} />
+        <Testimoniallayout
+          showcarousel={false}
+          showpagesheader={false}
+          closePptst={true}
+        />
+        <Testimonialform />
         <Footer />
       </div>
     </>

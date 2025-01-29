@@ -72,24 +72,33 @@ export default function Servicesdetaillayout() {
                   </div>
 
                   <div className="col-*-* top-container p-5 mt-5">
-                    <h3 className="text-white text-center mb-5">Resume</h3>
+                    <h3 className="text-white text-center">
+                      Resume
+                      <i className="fa fa-download text-muted ml-3"></i>
+                    </h3>
+                    <div className="mb-3">
+                      <span className="text-muted">
+                        Download different types of Resume file
+                      </span>
+                    </div>
+
                     <Link>
                       <div className="container-text p-4 d-flex justify-content-between text-white">
                         <h5>Get Resume.pdf</h5>{" "}
-                        <span>
-                          <i className="fa fa-chevron-right"></i>
-                        </span>
+                        <h5>
+                          <i className="fa fa-file-pdf"></i>
+                        </h5>
                       </div>
                     </Link>
                     {/*  */}
 
                     <Link>
                       <div className="container-text p-4 d-flex justify-content-between text-white mt-3">
-                        <h5>Get Resume.doc</h5>{" "}
-                        <span>
-                          <i className="fa fa-chevron-right"></i>
-                          <i className="fa fa-chevron-right"></i>
-                        </span>
+                        <h5>Get Resume.doc</h5> {/* <span> */}
+                        <h5>
+                          <i className="fa fa-file-word"></i>
+                        </h5>
+                        {/* </span> */}
                       </div>
                     </Link>
                     {/*  */}
@@ -97,10 +106,9 @@ export default function Servicesdetaillayout() {
                     <Link>
                       <div className="container-text p-4 d-flex justify-content-between text-white mt-3">
                         <h5>Get Resume.ppt</h5>{" "}
-                        <span>
-                          <i className="fa fa-chevron-right"></i>
-                          <i className="fa fa-chevron-right"></i>
-                        </span>
+                        <h5>
+                          <i className="fa fa-file-powerpoint"></i>
+                        </h5>
                       </div>
                     </Link>
                   </div>

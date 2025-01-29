@@ -1,6 +1,8 @@
+@use "../../base/colors" as color;
+
 .container-breadCrumbs {
   width: 100vw;
-  background-color: $primary-color-one-light;
+  background-color: color.$primary-color-one-light;
   padding-bottom: 8%;
 
   @media only screen and (max-width: 768px) {
@@ -19,7 +21,7 @@
       padding-top: 15px;
       padding-bottom: 2px;
       margin-top: -20px;
-      background-color: $primary-color-two;
+      background-color: color.$primary-color-two;
       width: 220px;
       border-radius: 50px;
     }

@@ -7,28 +7,95 @@ export default function Contactform({ handleIschecked, ischecked }) {
   const [phone, setPhone] = useState("");
   const [email, setEmail] = useState("");
   const [description, setDescription] = useState("");
+  const [error, setError] = useState(null);
+  const [success, setSuccess] = useState(null);
+
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+    console.log("post request");
+
+    if (!username) {
+      setError("Please fill up username field");
+    } else if (!phone) {
+      setError("Please fill up phone field");
+    } else if (!email) {
+      setError("Please fill up email field");
+    } else if (!description) {
+      setError("Please write a description");
+    } else {
+      try {
+        const response = await fetch("http://127.0.0.1:8000/app/contact/", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            name: username,
+            mobile_no: phone,
+            email: email,
+            description: description,
+          }),
+        });
+
+        const data = await response.json();
+
+        console.log(data);
+
+        if (response.ok) {
+          setSuccess(data["message"]);
+          console.log(data["message"]);
+          setUsername("");
+          setEmail("");
+          setPhone("");
+          setDescription("");
+        } else {
+          setError(data["error"]);
+          console.log(data["error"]);
+        }
+      } catch (error) {
+        setError("somthing went wrong, please try again.");
+      }
+    }
+  };
 
   return (
     <>
+      {error && (
+        <div className="w-100 text-danger p-3 mb-2 error text-center">
+          {error}
+        </div>
+      )}
+
+      {success && (
+        <div className="w-100 text-success p-3 mb-2 success text-center">
+          {success}
+        </div>
+      )}
+
       <div className="container-contact-form">
-        <form action="" method="post">
-          <div className="d-flex justify-content-between">
-            <Input
-              type="text"
-              placeholder="User Name"
-              className="contact-input mr-2"
-              maxLength="50"
-              onChange={(event) => setUsername(event.target.value)}
-              value={username}
-            />
-            <Input
-              type="phone"
-              placeholder="Mobile No"
-              className="contact-input ml-2"
-              maxLength="15"
-              value={phone}
-              onChange={(event) => setPhone(event.target.value)}
-            />
+        <form action="" onSubmit={handleSubmit}>
+          <div className="row">
+            <div className="col-md mb-3">
+              <Input
+                type="text"
+                placeholder="Username"
+                className="contact-input pt-2 pb-2"
+                maxLength="50"
+                onChange={(event) => setUsername(event.target.value)}
+                value={username}
+              />
+            </div>
+
+            <div className="col-md">
+              <Input
+                type="phone"
+                placeholder="Mobile No"
+                className="contact-input pt-2 pb-2"
+                maxLength="20"
+                value={phone}
+                onChange={(event) => setPhone(event.target.value)}
+              />
+            </div>
           </div>
           <Input
             type="email"
@@ -65,7 +132,6 @@ export default function Contactform({ handleIschecked, ischecked }) {
                 : "button-contact-disabled btn-disabled btn btn-outline-light p-3 w-100"
             }
             text="Submit Form"
-            type="button"
             disabled={!ischecked}
           />
         </form>

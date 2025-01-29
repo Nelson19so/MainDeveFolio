@@ -1,7 +1,9 @@
+@use "../../base/colors" as color;
+
 .container-about-layout {
   width: 100vw;
   overflow: hidden;
-  background-color: $primary-color-one;
+  background-color: color.$primary-color-one;
 
   .container-service-grid {
     .container-inner {
@@ -29,12 +31,12 @@
             }
             .top-- {
               // .container-code {
-              //   border: 1px solid $color-muted;
+              //   border: 1px solid color.$color-muted;
               // }
               i {
                 display: block;
                 padding: 20px;
-                border: 1px solid $color-muted;
+                border: 1px solid color.$color-muted;
                 width: 60px;
               }
             }

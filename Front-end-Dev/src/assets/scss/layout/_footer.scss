@@ -1,5 +1,7 @@
+@use "../base/colors" as color;
+
 .container-footer {
-  background-color: $primary-color-one-light;
+  background-color: color.$primary-color-one-light;
 
   footer {
     width: 100vw;
@@ -35,7 +37,7 @@
               .Icon {
                 display: block;
                 padding: 27px 7%;
-                border: 1px solid $color-muted;
+                border: 1px solid color.$color-muted;
                 border-radius: 100px;
                 max-width: 80px;
                 text-align: center;
@@ -45,7 +47,7 @@
               .Icon- {
                 display: block;
                 padding: 15px 0px;
-                border: 1px solid $color-muted;
+                border: 1px solid color.$color-muted;
                 border-radius: 100px;
                 max-width: 47px;
                 text-align: center;
@@ -59,21 +61,21 @@
 
       .container-bottom {
         width: 100%;
-        border-top: 1px solid $color-muted;
+        border-top: 1px solid color.$color-muted;
         clear: both;
         padding: 1% 12%;
         padding-top: 3%;
         font-size: small;
-        color: $color-muted;
+        color: color.$color-muted;
 
         i {
-          color: $background-white;
+          color: color.$background-white;
         }
         a {
-          color: $color-muted;
+          color: color.$color-muted;
         }
         p {
-          color: $color-muted;
+          color: color.$color-muted;
           font-size: 600;
         }
       }

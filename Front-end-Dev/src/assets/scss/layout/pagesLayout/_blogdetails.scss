@@ -1,11 +1,13 @@
+@use "../../base/colors" as color;
+
 .container-layout-blogdetails {
-  background-color: $primary-color-two-lighter;
+  background-color: color.$primary-color-two-lighter;
   width: 100vw;
 
   .container {
     .container-img-blogDetails {
       width: 100%;
-      height: 80vh;
+      // height: 100vh;
 
       img {
         width: 100%;
@@ -20,11 +22,12 @@
             .row {
               .container-main {
                 .rounded {
-                  border: 1px solid $color-muted;
+                  border: 1px solid color.$color-muted;
                   text-align: center;
                   padding: 30px 25px;
                   font-size: 25px;
                   max-width: 100px;
+                  min-width: 100px;
                 }
               }
             }

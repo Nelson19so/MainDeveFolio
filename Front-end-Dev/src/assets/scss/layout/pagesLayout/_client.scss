@@ -1,10 +1,12 @@
+@use "../../base/colors" as color;
+
 .container-client {
-  background-color: $primary-color-one-light;
+  background-color: color.$primary-color-one-light;
 
   .container {
     .client-man {
       .client-inner {
-        color: $background-white;
+        color: color.$background-white;
         text-align: center;
 
         .cliend-inner-main {
@@ -17,7 +19,7 @@
             .font {
               display: block;
               padding: 15px 15px;
-              border: 1px solid $color-muted;
+              border: 1px solid color.$color-muted;
               width: 70px;
               margin-top: 20px;
               // height: 50px;

@@ -1,4 +1,4 @@
-import blogMain from "../../../images/Blogdetails-2.jpg";
+import blogMain from "../../../images/blogdetails.jpg";
 import Pagesheader from "../header/Pagesheader";
 
 export default function Blogdetailslayout() {
@@ -67,13 +67,13 @@ export default function Blogdetailslayout() {
 
                 <div className="container-2">
                   <div className="row">
-                    <div className="container-main col-2">
+                    <div className="container-main col-md-2 mb-3">
                       <div className="rounded rounded-pill">
-                        <i className="fa fa-fire"></i>
+                        <i className="fa fa-fire text-white"></i>
                       </div>
                     </div>
                     {/*  */}
-                    <div className="container-text col">
+                    <div className="container-text col-md">
                       <h4 className="text-white">Ideal Generating</h4>
                       <p className="text-muted">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -86,13 +86,13 @@ export default function Blogdetailslayout() {
                   </div>
                   {/*  */}
                   <div className="row">
-                    <div className="container-main col-2">
+                    <div className="container-main col-md-2 mb-3">
                       <div className="rounded rounded-pill">
-                        <i className="fa fa-bullet"></i>
+                        <i className="fa fa-pencil text-white"></i>
                       </div>
                     </div>
                     {/*  */}
-                    <div className="container-text col">
+                    <div className="container-text col-md">
                       <h4 className="text-white">Research & Sketching</h4>
                       <p className="text-muted">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -105,13 +105,13 @@ export default function Blogdetailslayout() {
                   </div>
                   {/*  */}
                   <div className="row">
-                    <div className="container-main col-2">
+                    <div className="container-main col-md-2 center mb-3">
                       <div className="rounded rounded-pill">
-                        <i className="fa fa-plane text-white"></i>
+                        <i className="fa fa-rocket text-white"></i>
                       </div>
                     </div>
                     {/*  */}
-                    <div className="container-text col">
+                    <div className="container-text col-md">
                       <h4 className="text-white">Launching</h4>
                       <p className="text-muted">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.

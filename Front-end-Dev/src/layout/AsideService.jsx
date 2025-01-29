@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import imgOne from "../../images/Drop-1.jpg";
+import imgOne from "../../images/b.jpg";
 
 export default function AsideService() {
   return (
@@ -14,9 +14,9 @@ export default function AsideService() {
                   Start your own project by hiring me to freelance/work for you.
                 </h1>
                 <h5 className="text-white mb-5">
-                  Let's make build up/manage your project for you.
+                  I hope my skills matches your companies requirement
                 </h5>
-                <Link>Click me to get started</Link>
+                <Link>Hire Nelson</Link>
               </div>
             </div>
           </div>

@@ -4,7 +4,7 @@ export default function Navbardropdown({ className }) {
   return (
     <>
       <div className={className}>
-        <div className="dropdown show mr-2">
+        <div className="dropdown show">
           <Link
             className="btn dropdown-toggle"
             role="button"

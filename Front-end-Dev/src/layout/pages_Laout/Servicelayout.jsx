@@ -136,7 +136,7 @@ export default function Servicelayout({ pageheader }) {
             </div>
           </div>
           {/*  */}
-          <div className="row mt-2">
+          <div className="row">
             <div className="col-lg container--">
               <div className="container p-5 shadow-lg">
                 <i className="fa fa-database text-white header-text mb-3"></i>

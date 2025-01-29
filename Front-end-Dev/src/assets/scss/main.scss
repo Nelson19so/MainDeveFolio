@@ -1,5 +1,5 @@
-@import "./base/base";
-@import "./config/config";
-@import "./components/components";
-@import "./pages/pages";
-@import "./layout/layout";
+@use "./base/base" as base;
+@use "./config/config" as config;
+@use "./components/components" as components;
+@use "./pages/pages" as pages;
+@use "./layout/layout" as layout;

@@ -1,7 +1,24 @@
-import Itemheader from "../header/Itemheader,";
 import Pagesheader from "../header/Pagesheader";
+import mainImg from "../../../images/lee-campbell-DtDlVpy-vvQ-unsplash.jpg";
+import { useEffect, useState } from "react";
 
-export default function Testimoniallayout({ showcarousel, showpagesheader }) {
+export default function Testimoniallayout({
+  showcarousel,
+  showpagesheader,
+  closePptst,
+}) {
+  const [data, setData] = useState([]);
+  const [error, setError] = useState(null);
+
+  useEffect(() => {
+    fetch("http://127.0.0.1:8000/app/testimonial/")
+      .then((response) => response.json())
+      .then((data) => setData(data))
+      .catch((err) => {
+        setError(err);
+      });
+  }, []);
+
   return (
     <>
       <div className="container-testimonials">
@@ -54,7 +71,6 @@ export default function Testimoniallayout({ showcarousel, showpagesheader }) {
                 </a>
               </>
             )}
-
             {/* inner */}
             <div className="carousel-inner py-4">
               <div className={showcarousel && "carousel-item active"}>
@@ -64,7 +80,7 @@ export default function Testimoniallayout({ showcarousel, showpagesheader }) {
                       <center>
                         <div className="top-container">
                           <div className="wrapper-img">
-                            <i className="fa fa-user text-white"></i>
+                            <img src={mainImg} alt="" />
                           </div>
                         </div>
                       </center>
@@ -105,7 +121,7 @@ export default function Testimoniallayout({ showcarousel, showpagesheader }) {
                       <center>
                         <div className="top-container">
                           <div className="wrapper-img">
-                            <i className="fa fa-user text-white"></i>
+                            <i className="fa fa-user mt-4 text-white"></i>
                           </div>
                         </div>
                       </center>
@@ -146,7 +162,7 @@ export default function Testimoniallayout({ showcarousel, showpagesheader }) {
                       <center>
                         <div className="top-container">
                           <div className="wrapper-img">
-                            <i className="fa fa-user text-white"></i>
+                            <i className="fa fa-user mt-4 text-white"></i>
                           </div>
                         </div>
                       </center>
@@ -185,7 +201,7 @@ export default function Testimoniallayout({ showcarousel, showpagesheader }) {
                       <center>
                         <div className="top-container">
                           <div className="wrapper-img">
-                            <i className="fa fa-user text-white"></i>
+                            <i className="fa fa-user mt-4 text-white"></i>
                           </div>
                         </div>
                       </center>
@@ -226,7 +242,7 @@ export default function Testimoniallayout({ showcarousel, showpagesheader }) {
                       <center>
                         <div className="top-container">
                           <div className="wrapper-img">
-                            <i className="fa fa-user text-white"></i>
+                            <i className="fa fa-user mt-4 text-white"></i>
                           </div>
                         </div>
                       </center>
@@ -267,7 +283,7 @@ export default function Testimoniallayout({ showcarousel, showpagesheader }) {
                       <center>
                         <div className="top-container">
                           <div className="wrapper-img">
-                            <i className="fa fa-user text-white"></i>
+                            <i className="fa fa-user mt-4 text-white"></i>
                           </div>
                         </div>
                       </center>
@@ -306,7 +322,7 @@ export default function Testimoniallayout({ showcarousel, showpagesheader }) {
                       <center>
                         <div className="top-container">
                           <div className="wrapper-img">
-                            <i className="fa fa-user text-white"></i>
+                            <i className="fa fa-user mt-4 text-white"></i>
                           </div>
                         </div>
                       </center>
@@ -347,7 +363,7 @@ export default function Testimoniallayout({ showcarousel, showpagesheader }) {
                       <center>
                         <div className="top-container">
                           <div className="wrapper-img">
-                            <i className="fa fa-user text-white"></i>
+                            <i className="fa fa-user mt-4 text-white"></i>
                           </div>
                         </div>
                       </center>
@@ -388,7 +404,7 @@ export default function Testimoniallayout({ showcarousel, showpagesheader }) {
                       <center>
                         <div className="top-container">
                           <div className="wrapper-img">
-                            <i className="fa fa-user text-white"></i>
+                            <i className="fa fa-user mt-4 text-white"></i>
                           </div>
                         </div>
                       </center>
@@ -421,6 +437,58 @@ export default function Testimoniallayout({ showcarousel, showpagesheader }) {
               </div>
             </div>
 
+            {/* users testimonials */}
+            {closePptst && (
+              <div className="row container--items">
+                {data.length ? (
+                  <>
+                    {data.map((testimonial) => (
+                      <div className="col-lg-4 h-100 mb-3" key={testimonial.id}>
+                        <div className="container h-100 p-4 shadow-lg">
+                          <center>
+                            <div className="top-container">
+                              <div className="wrapper-img">
+                                {testimonial.profile ? (
+                                  <img src={testimonial.profile} alt="" />
+                                ) : (
+                                  <i className="fa fa-user mt-4 text-white"></i>
+                                )}
+                              </div>
+                            </div>
+                          </center>
+                          <div className="container-articles mt-3 mb-3">
+                            <article>
+                              <p className="text-muted">
+                                {testimonial.testimonial}
+                              </p>
+                            </article>
+                          </div>
+
+                          <div className="bottom-items">
+                            <center>
+                              <h6 className="text-white">{testimonial.name}</h6>
+                              <span
+                                className="text-muted"
+                                style={{ fontSize: "smaller" }}
+                              >
+                                {testimonial.work}
+                              </span>
+                            </center>
+                          </div>
+                        </div>
+                      </div>
+                    ))}
+                  </>
+                ) : (
+                  <>
+                    <div>
+                      {/* <h1 className="text-muted">No data was found</h1> */}
+                    </div>
+                  </>
+                )}
+              </div>
+            )}
+            {/* users testimonials ends */}
             {/*  */}
           </div>
         </div>

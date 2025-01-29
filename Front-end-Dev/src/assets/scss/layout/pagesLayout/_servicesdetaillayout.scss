@@ -1,5 +1,7 @@
+@use "../../base/colors" as color;
+
 .container-service-layout {
-  background-color: $primary-color-one;
+  background-color: color.$primary-color-one;
   width: 100vw;
 
   .container {
@@ -9,13 +11,13 @@
           padding-left: 3.5%;
 
           .top-container {
-            background-color: $primary-color-two-lighter;
+            background-color: color.$primary-color-two-lighter;
             width: 350px;
 
             .container-text {
               font-size: 12px;
               // width: 100%;
-              background-color: $primary-color-one-light;
+              background-color: color.$primary-color-one-light;
 
               h5 {
                 font-size: 14px;
@@ -41,7 +43,7 @@
               .bottom-container {
                 .row {
                   .holder {
-                    background-color: $primary-color-one-light;
+                    background-color: color.$primary-color-one-light;
                   }
                 }
               }

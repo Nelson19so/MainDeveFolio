@@ -1,8 +1,9 @@
-@import "./atom/buttons";
-@import "./atom/input";
+@use "./atom/buttons" as buton;
+@use "./atom/input" as input;
 
-@import "./molecules/Nav-items";
+@use "./molecules/Nav-items" as nav-items;
+@use "./molecules/form" as form;
 
-@import "./modal/modal";
+@use "./modal/modal" as modal;
 
-@import "./loadscreen";
+@use "./loadscreen" as loadscreen;

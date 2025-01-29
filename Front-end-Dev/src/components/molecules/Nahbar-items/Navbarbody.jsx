@@ -81,14 +81,14 @@ export default function Navbarbody() {
                   aria-labelledby="dropdownMenuLink"
                 >
                   <Link
-                    className="dropdown-item"
+                    className="dropdown-item text-white"
                     to="/Service"
                     onClick={scrolltop}
                   >
                     Services
                   </Link>
                   <Link
-                    className="dropdown-item"
+                    className="dropdown-item text-white"
                     to="/servicesdetails"
                     onClick={scrolltop}
                   >
@@ -113,14 +113,14 @@ export default function Navbarbody() {
                   aria-labelledby="dropdownMenuLink"
                 >
                   <Link
-                    className="dropdown-item"
+                    className="dropdown-item text-white"
                     to="/blogpost"
                     onClick={scrolltop}
                   >
                     Blog Post
                   </Link>
                   <Link
-                    className="dropdown-item"
+                    className="dropdown-item text-white"
                     to="/Blogdetails"
                     onClick={scrolltop}
                   >

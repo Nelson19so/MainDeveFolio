@@ -1,4 +1,46 @@
+@use "../../base/colors" as color;
+
 .container-layout {
   width: 100vw;
-  background-color: $primary-color-two;
+  background-color: color.$primary-color-two;
+
+  .container {
+    .grid {
+      .-grid-inner {
+        .container {
+          background-color: color.$primary-color-one;
+
+          .container-items- {
+            .follow- {
+              a {
+                display: block;
+                border-radius: 100px;
+                width: 20px;
+                text-align: center;
+                padding: 25px 0px;
+                padding-left: 33px;
+                padding-right: 43px;
+              }
+            }
+          }
+
+          .container-items {
+            background-color: color.$primary-color-one-light;
+
+            span {
+              i {
+                font-size: 22px;
+              }
+            }
+
+            .info {
+              span {
+                font-size: 15px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }

@@ -1,4 +1,4 @@
-@import "./mixin";
-@import "./breakpoints";
-@import "./function";
-@import "./variables";
+@use "./mixin" as mixin;
+@use "./breakpoints" as breakpoint;
+@use "./function" as function;
+@use "./variables" as variables;

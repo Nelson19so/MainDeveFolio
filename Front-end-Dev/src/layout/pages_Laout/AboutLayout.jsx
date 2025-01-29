@@ -36,15 +36,15 @@ export default function AboutLayout({ pagesheader }) {
             <div className="col-lg right-container-about">
               <div className="container p-1 pt-5 h-100">
                 <Itemheader
-                  text="Who is Nelson?"
+                  text="Who i'm i & what do i work?"
                   textTwo="About Me"
                   className="text-white"
                 />
                 <div className="container-- mt-4">
                   <span className="text-muted">
-                    My Name is <code>Nelson, a Web developer</code> seeking to
-                    freelance for comapnies looking for junior developers to
-                    help them innovate/maintain and develope a web application
+                    I am a<code> Web developer</code> seeking to freelance for
+                    comapnies looking for junior developers to help them
+                    innovate/maintain and develope a web application
                   </span>
                 </div>
 
@@ -65,8 +65,9 @@ export default function AboutLayout({ pagesheader }) {
                       <div className="col-*-* mt-3 container-text-main--">
                         <span className="text-muted">
                           <Itemheader text="About One" className="text-white" />
-                          Hi, I'm Nelson, a web developer with a passion for
-                          creating dynamic and user-friendly websites.{" "}
+                          My name is Nelson, a Full-stack Developer with a
+                          passion for creating dynamic and user-friendly
+                          websites.{" "}
                           <kbd>
                             {" "}
                             With 2 years of experience in the field,
@@ -85,10 +86,10 @@ export default function AboutLayout({ pagesheader }) {
                       <div className="col-*-* mt-3 container-text-main--">
                         <span className="text-muted">
                           <Itemheader text="About Two" className="text-white" />
-                          Welcome to my web development blog, a resource for web
-                          developers, designers, and entrepreneurs looking to
-                          stay up-to-date on the latest trends, technologies,
-                          and best practices in web development.
+                          I Welcome you to my web development blog, a resource
+                          for web developers, designers, and entrepreneurs
+                          looking to stay up-to-date on the latest trends,
+                          technologies, and best practices in web development.
                         </span>
                       </div>
                     </div>
