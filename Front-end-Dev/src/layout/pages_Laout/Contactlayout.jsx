@@ -111,15 +111,23 @@ export default function Contactlayout() {
                   title="Want a contract with me? contact me below."
                   classNameTitle="text-white"
                 />
+                <p className="text-muted mb-3">
+                  I am passionate about building relationships with my customers
+                  and partners. if you're interested in learning more about my
+                  my and my work, or want's to give an opportunity to work with
+                  me, use the form below to send me a message.
+                  <code> I normally respond under a day (1 day) </code> once i
+                  reviece your message to connect with me, i am always excited
+                  to see mew offers from my client. Your satisfation is my joy
+                  and priority. Use the form underneath to
+                </p>
+                <p className="text-muted mb-3">
+                  contact me, or use the informations provided above such as
+                  phone, Email or follow/contact me via social media. .
+                </p>
                 <p className="text-muted mb-5">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
-                  facilis veritatis, eveniet ad et quod eum odit laboriosam
-                  dolores id suscipit repellat consequuntur rerum ipsa amet
-                  numquam voluptatem assumenda. Ducimus. Lorem, ipsum dolor sit
-                  amet consectetur adipisicing elit. Eum accusantium sapiente
-                  voluptatibus tenetur? Sapiente quaerat at, cum ipsum deleniti
-                  similique necessitatibus numquam, cupiditate, fuga eaque
-                  assumenda beatae eum perferendis porro.
+                  <span className="text-warning">NOTE: </span>Contacting me Via
+                  Email or Phone much more faster in response.
                 </p>
 
                 {/* Renders the contact form */}

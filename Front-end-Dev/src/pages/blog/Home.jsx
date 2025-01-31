@@ -24,7 +24,7 @@ function Home() {
                 <h2 className="text-white">Nelson Benzo</h2>
                 <div className="ml- mt-3">
                   <span>
-                    I am <code>Nelson</code> passionate {""}
+                    I am <code>Nelson</code>, a passionate {""}
                     <code>web dev dedicated</code> to helping businesses like
                     yours succeed and grow online
                   </span>

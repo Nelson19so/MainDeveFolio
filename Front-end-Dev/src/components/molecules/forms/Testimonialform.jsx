@@ -20,7 +20,7 @@ export default function Testimonialform() {
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({ name, work, profile, testimonial }),
+        body: JSON.stringify({ name, work, testimonial, profile }),
       });
 
       const data = await response.json();
@@ -52,10 +52,11 @@ export default function Testimonialform() {
           title="Write your own testimonial"
         />
         <p className="text-muted mb-5">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati,
-          in enim explicabo odit suscipit ut perferendis quam aspernatur autem
-          labore dolores error porro velit praesentium, amet cupiditate quasi,
-          numquam inventore.
+          Write your testimonial and tell us what you think about me and my
+          work, your opinions matters to us and people wanting to oppotune me to
+          work for them. Dont hesitate to fill in the details, as we do not
+          require your personnal information. Make sure your testimonials are
+          what flows from your heart. Thank you for your time.
         </p>
 
         {error && (
@@ -140,21 +141,6 @@ export default function Testimonialform() {
           </div>
 
           <div className="input-control mt-3">
-            <label htmlFor="profile" className="text-muted">
-              Select your profile img
-            </label>
-            <Input
-              id="profile"
-              type="file"
-              placeholder="Chose your profile"
-              className="testimonial-input"
-              maxLength="20"
-              value={profile}
-              onChange={(event) => setProfile(event.target.value)}
-            />
-          </div>
-
-          <div className="input-control mt-3">
             <label htmlFor="text-area" className="text-muted">
               Tell us what you think about my work in summary
             </label>
@@ -166,6 +152,21 @@ export default function Testimonialform() {
               maxLength="900"
               value={testimonial}
               onChange={(event) => setTestimonial(event.target.value)}
+            />
+          </div>
+
+          <div className="input-control mt-3">
+            <label htmlFor="profile" className="text-muted">
+              Select your profile img
+            </label>
+            <Input
+              id="profile"
+              type="file"
+              placeholder="Chose your profile"
+              className="testimonial-input"
+              maxLength="20"
+              value={profile}
+              onChange={(event) => setProfile(event.target.value)}
             />
           </div>
 

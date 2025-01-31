@@ -4,8 +4,25 @@
   width: 100vw;
   overflow: hidden;
   background-color: color.$primary-color-two-lighter;
+  padding-bottom: 3%;
 
   .container-testimonial-items {
+    .container--items {
+      width: 100%;
+      padding-left: 2%;
+    }
+    .items {
+      width: 30.5%;
+      float: left;
+      margin-right: 2.8%;
+
+      @media only screen and (max-width: 1000px) {
+        width: 90.8%;
+        float: none;
+        margin-right: 0;
+      }
+    }
+
     .container {
       background-color: color.$primary-color-one-light;
       border-radius: 6px;

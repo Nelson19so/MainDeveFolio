@@ -519,6 +519,23 @@ nav .container ul li a:active, nav .container ul li a:focus, nav .container ul l
   width: 100vw;
   overflow: hidden;
   background-color: rgb(36, 36, 52);
+  padding-bottom: 3%;
+}
+.container-testimonials .container-testimonial-items .container--items {
+  width: 100%;
+  padding-left: 2%;
+}
+.container-testimonials .container-testimonial-items .items {
+  width: 30.5%;
+  float: left;
+  margin-right: 2.8%;
+}
+@media only screen and (max-width: 1000px) {
+  .container-testimonials .container-testimonial-items .items {
+    width: 90.8%;
+    float: none;
+    margin-right: 0;
+  }
 }
 .container-testimonials .container-testimonial-items .container {
   background-color: rgb(47, 47, 63);

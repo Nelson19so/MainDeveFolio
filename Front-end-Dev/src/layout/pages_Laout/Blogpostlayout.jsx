@@ -142,7 +142,7 @@ export default function Blogpostlayout({ pagesheader, displayblogs }) {
                   </>
                 ) : (
                   <>
-                    <h3 className="text-warning text-center">
+                    <h3 className="text-warning text-center mt-5">
                       All data were not found
                     </h3>
                   </>

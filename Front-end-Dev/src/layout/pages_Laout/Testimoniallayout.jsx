@@ -439,11 +439,11 @@ export default function Testimoniallayout({
 
             {/* users testimonials */}
             {closePptst && (
-              <div className="row container--items">
+              <div className="container--items">
                 {data.length ? (
                   <>
                     {data.map((testimonial) => (
-                      <div className="col-lg-4 h-100 mb-3" key={testimonial.id}>
+                      <div className="items h-100 mb-3" key={testimonial.id}>
                         <div className="container h-100 p-4 shadow-lg">
                           <center>
                             <div className="top-container">
@@ -482,7 +482,7 @@ export default function Testimoniallayout({
                 ) : (
                   <>
                     <div>
-                      {/* <h1 className="text-muted">No data was found</h1> */}
+                      <h4 className="text-warning mt-5">All data were found</h4>
                     </div>
                   </>
                 )}

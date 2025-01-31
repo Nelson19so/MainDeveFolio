@@ -88,7 +88,7 @@ export default function Projectlayout({ displayheader, displayitems }) {
                 </>
               ) : (
                 <div>
-                  <h4 className="text-warning text-center">
+                  <h4 className="text-warning text-center mt-5">
                     Some data were not found
                   </h4>
                 </div>

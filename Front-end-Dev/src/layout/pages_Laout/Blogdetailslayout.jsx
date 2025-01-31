@@ -1,5 +1,6 @@
 import blogMain from "../../../images/blogdetails.jpg";
 import Pagesheader from "../header/Pagesheader";
+import { Link } from "react-router-dom";
 
 export default function Blogdetailslayout() {
   return (
@@ -15,53 +16,52 @@ export default function Blogdetailslayout() {
                 <div>
                   <Pagesheader
                     classNameSubtitle="text-muted mt-5"
-                    subtitle="Givest None - Profit"
-                    title="Givest is a none profit and fund rising website"
+                    subtitle="Nelson Web dev Site"
+                    title="Welcome to Nelson's website Dev Blog."
                     classNameTitle="text-white"
                   />
+
                   <p className="mt-5 text-muted">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Aspernatur, obcaecati fuga facere aliquid magni neque vel ea
-                    cupiditate saepe ab dolores voluptatibus, tempora quae
-                    labore illum quod, facilis blanditiis. Animi. Lorem ipsum
-                    dolor sit amet consectetur adipisicing elit. Culpa
-                    aspernatur rem cupiditate rerum ipsam accusamus harum
-                    expedita distinctio enim modi!
+                    Welcome to my Website Development blog website, on this
+                    blog, i will be sharing details about this blog. My name is
+                    Nelson, i'm a full-stack Developer, a front-end dev and
+                    back-end dev, looking to work for my client's and deliver
+                    astonishing works. how in deliver my works is what my
+                    client's loves, as of the recent testimonials.
                   </p>
+
                   <p className="mt-5 text-muted">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Id
-                    quod numquam quasi delectus, possimus nihil cumque non illum
-                    neque, quis unde omnis odio quas, incidunt officia dolore
-                    sint amet aut. Ut nesciunt eos sunt. Illum officiis sed, id
-                    explicabo sapiente voluptas blanditiis nihil odit
-                    perspiciatis? Lorem ipsum dolor sit amet, consectetur
-                    adipisicing elit. Quidem doloremque rem aliquid quaerat
+                    On this blog, i'll be sharing Front-End Dev and Back-End Dev
+                    plus launching optimization and others. My goal is to make
+                    it easy for my client to reach out to me and also use this
+                    blog to showcase my client my awesome works in the services
+                    page, were i have my projects posted/rendered there. for
+                    client to see and explore, as it's important to show
+                    evidence to stand out.
                   </p>
+
                   <p className="mt-5 text-muted">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Reprehenderit iure et, corporis dolorum quos magni deleniti
-                    non itaque error repellat fugiat labore totam maxime
-                    delectus debitis eum reiciendis, illo dolor pariatur ipsum
-                    asperiores quod culpa? Aliquid maxime neque nostrum ratione
-                    molestiae adipisci temporibus perspiciatis iure labore
-                    voluptas nam commodi ullam iusto magni, eaque reprehenderit
-                    ipsum consectetur assumenda ad amet enim.
+                    If you have any any question or you want yo reach out to me,
+                    please do not hesitate ro reach out to me ASAP as i'm always
+                    ready to work, answer any questions. i am always happy to
+                    respond to my client as my concern is they happiness and
+                    satisfaction. do not forget to come to me privatly by
+                    reaching out to "+234 803 613 1721" or{" "}
+                    <Link to="emailto: nelsonsomto19@gmail.com">Email me.</Link>{" "}
+                    i will always be there waiting for you.
                   </p>
                 </div>
 
                 <div>
                   <Pagesheader
                     classNameTitle="text-white"
-                    title="How to complete this?"
+                    title="How to complete a project?"
                   />
-                  <p className="mt-5 text-muted">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Excepturi natus voluptatum voluptates pariatur vel.
-                    Quibusdam veniam quisquam magnam id nobis nulla ipsam
-                    accusamus architecto dignissimos eaque, ullam optio facere
-                    velit corrupti, possimus soluta est minus natus similique
-                    voluptatibus sapiente illum necessitatibus error. Veritatis
-                    provident omnis saepe earum accusamus animi suscipit?
+                  <p className="text-muted mb-5">
+                    There several ways to complete a project depending on the
+                    requirement's and need of the project. But as it is, you can
+                    still apply few solution which i have over here and about to
+                    share with you.
                   </p>
                 </div>
 
@@ -74,13 +74,19 @@ export default function Blogdetailslayout() {
                     </div>
                     {/*  */}
                     <div className="container-text col-md">
-                      <h4 className="text-white">Ideal Generating</h4>
+                      <h4 className="text-white">
+                        Ideal Generating & planning
+                      </h4>
                       <p className="text-muted">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Labore ea velit, laboriosam consectetur hic est aliquid
-                        fugiat voluptatibus nam sunt, dolore sed temporibus,
-                        minima eum illum. Omnis laudantium ab ipsa nam deserunt
-                        repellendus nemo atque a illum dolorem, quia tenetur.
+                        Having an ideal or planning on what you want to create
+                        or develope is the first step of starting and completing
+                        a project. having and ideal and planning makes dev
+                        faster and easy as it makes no sense cooking without
+                        knowing what you are cooking, that's why ideal
+                        generating and planning is the first step to take before
+                        starting a project as having an ideal makes it easy to
+                        finish up a project because we know where our
+                        Development will start and end
                       </p>
                     </div>
                   </div>
@@ -88,18 +94,20 @@ export default function Blogdetailslayout() {
                   <div className="row">
                     <div className="container-main col-md-2 mb-3">
                       <div className="rounded rounded-pill">
-                        <i className="fa fa-pencil text-white"></i>
+                        <i className="fa fa-bug text-white"></i>
                       </div>
                     </div>
                     {/*  */}
                     <div className="container-text col-md">
-                      <h4 className="text-white">Research & Sketching</h4>
+                      <h4 className="text-white">Debbuging</h4>
                       <p className="text-muted">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Labore ea velit, laboriosam consectetur hic est aliquid
-                        fugiat voluptatibus nam sunt, dolore sed temporibus,
-                        minima eum illum. Omnis laudantium ab ipsa nam deserunt
-                        repellendus nemo atque a illum dolorem, quia tenetur.
+                        Debbuging is the mid level to tak when handling a
+                        project, whether large, medium and small project. as
+                        this helps fish out all errors and their source to help
+                        the web app work correctly and prevent any issues when
+                        using this website application. Debbuging is essential
+                        in a web app before taking an further action, whether
+                        small, medium or large project
                       </p>
                     </div>
                   </div>
@@ -112,13 +120,15 @@ export default function Blogdetailslayout() {
                     </div>
                     {/*  */}
                     <div className="container-text col-md">
-                      <h4 className="text-white">Launching</h4>
+                      <h4 className="text-white">Testing & Launching</h4>
                       <p className="text-muted">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Labore ea velit, laboriosam consectetur hic est aliquid
-                        fugiat voluptatibus nam sunt, dolore sed temporibus,
-                        minima eum illum. Omnis laudantium ab ipsa nam deserunt
-                        repellendus nemo atque a illum dolorem, quia tenetur.
+                        Launching and testing is the final step to take in a
+                        project as it shows when a project is finished with the
+                        dev. buying domain and the others comes in handly before
+                        launching. Testing helps a lot to test and know whether
+                        the web application works correctly or still needs
+                        further attention for the dev or design, as this
+                        finalise a standard project.
                       </p>
                     </div>
                   </div>
@@ -130,23 +140,24 @@ export default function Blogdetailslayout() {
                     title="Project result summary"
                   />
                   <p className="text-muted mt-3">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Similique asperiores tenetur cupiditate nobis possimus, ex
-                    tempora voluptatem fugit, nulla ullam sapiente eum magnam
-                    cumque nihil! Tempore earum reprehenderit nihil molestias
-                    exercitationem aperiam at expedita ullam architecto
-                    asperiores repellat impedit temporibus aut, officia
-                    quisquam! Voluptate illum quos alias reprehenderit, corrupti
-                    reiciendis.
+                    As a result of the informations provided above, taking this
+                    action will help make your website faster as removing bugs
+                    can fasten your website and ideal generating and planning a
+                    project comes first, because knowing what your want can help
+                    give us knowledge on how to bring it to live. as a result of
+                    testing and launching, this helps project accessible online
+                    and make it easy for client to use, as this is usually the
+                    last step to take when embacking in a project that needs
+                    users to have access to use the web site.
                   </p>
                   <p className="mt-4 text-muted">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Distinctio rerum magni vel rem itaque repellat illum maiores
-                    quia saepe perspiciatis consequatur amet in sit, deserunt
-                    nisi repellendus. Illum quia libero odio quisquam minima
-                    perferendis, voluptatibus ex officia similique, sint unde
-                    dolore. Consequatur repudiandae ab ut corrupti perferendis
-                    necessitatibus cum ea.
+                    Using this steps in a project can be efficient for a website
+                    application that is takend serios in the development. taking
+                    necessary step needed to make a standard project can be very
+                    depending on requirement and need but they're major steps
+                    takend above other steps as a result of these steps stated
+                    here, the website will be perfectly going well with well
+                    planned architectural structure.
                   </p>
                 </div>
               </article>
