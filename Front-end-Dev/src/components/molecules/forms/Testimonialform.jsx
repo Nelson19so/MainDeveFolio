@@ -128,13 +128,13 @@ export default function Testimonialform() {
               <option className="text-muted" value="Cyber security">
                 Cyber security
               </option>
-              <option className="text-muted" value="Cyber security">
+              <option className="text-muted" value="Data Analytics">
                 Data Analytics
               </option>
-              <option className="text-muted" value="Cyber security">
+              <option className="text-muted" value="Machine learning">
                 Machine learning
               </option>
-              <option className="text-muted" value="Cyber security">
+              <option className="text-muted" value="Developer">
                 Developer
               </option>
             </select>

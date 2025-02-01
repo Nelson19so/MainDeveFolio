@@ -9,9 +9,17 @@ import Client from "../../layout/pages_Laout/Client";
 import Faq from "../../layout/pages_Laout/faq";
 import Projectlayout from "../../layout/pages_Laout/Projectlayout";
 import Servicecorousel from "../../layout/pages_Laout/Servicecorousel";
+import resume from "../../assets/others/Resume.pdf";
 
 function Home() {
   document.title = "Nelson Website dev Home page";
+
+  const handleDownloadResume = () => {
+    const link = document.createElement("a");
+    link.href = URL.createObjectURL(resume);
+    link.download = "resume.pdf";
+    link.click();
+  };
   return (
     <>
       <div className="container-items Home-page">
@@ -31,9 +39,14 @@ function Home() {
                 </div>
 
                 <div className="container-btn-- mt-5 mb-5">
-                  ``
                   <div className="button- w-100">
-                    <Button text="Download Resume" showicon={true} />
+                    <a href={resume}>
+                      <Button
+                        text="Download Resume"
+                        showicon={true}
+                        download="resume.pdf"
+                      />
+                    </a>
                   </div>
                   <div className="w-100 mt-5 button-two ml-">
                     <span>

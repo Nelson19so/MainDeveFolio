@@ -36,7 +36,7 @@ export default function Blogpostlayout({ pagesheader, displayblogs }) {
               </div>
               <div className="container-text--">
                 <span className="-">
-                  <p className="p-1 mr-1">Business -</p>
+                  <p className="p-1 mr-1 mt-1">Business -</p>
                   <p className="p-2">08 March 2024</p>
                 </span>
                 <h6>
@@ -62,7 +62,7 @@ export default function Blogpostlayout({ pagesheader, displayblogs }) {
               </div>
               <div className="container-text--">
                 <span className="-">
-                  <p className="p-1 mr-1">Business -</p>
+                  <p className="p-1 mr-1 mt-1">Business -</p>
                   <p className="p-2">08 March 2024</p>
                 </span>
                 <h6>
@@ -88,7 +88,7 @@ export default function Blogpostlayout({ pagesheader, displayblogs }) {
               </div>
               <div className="container-text--">
                 <span className="-">
-                  <p className="p-1 mr-1">Business -</p>
+                  <p className="p-1 mr-1 mt-1">Business -</p>
                   <p className="p-2">08 March 2024</p>
                 </span>
                 <h6>
@@ -122,7 +122,7 @@ export default function Blogpostlayout({ pagesheader, displayblogs }) {
                         </div>
                         <div className="container-text--">
                           <span className="-">
-                            <p className="p-1 mr-1">{blogpost.topic} -</p>
+                            <p className="p-1 mr-1 mt-1">{blogpost.topic} -</p>
                             <p className="p-2">08 March 2024</p>
                           </span>
                           <h6>{blogpost.heading}</h6>

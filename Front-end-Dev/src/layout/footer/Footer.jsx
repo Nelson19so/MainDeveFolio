@@ -23,7 +23,7 @@ export default function Footer() {
       <div className="container-footer pt-5">
         <footer>
           <div className="main-wrapper pb-3">
-            <div className="container-items mb-5">
+            <div className="container-items mb-5 pl-3 pr-3">
               <Pagesheader
                 classNameSubtitle="text-center text-muted"
                 classNameTitle="text-center text-white"
@@ -47,7 +47,7 @@ export default function Footer() {
                         <i className="fas fa-envelope text-white"></i>
                       </Link>
                       <div className="col text-white mt-3">
-                        <h3>nelsonsomto19@gmail.com</h3>
+                        <h4>nelsonsomto19@gmail.com</h4>
                       </div>
                     </div>
                   </div>
@@ -62,7 +62,7 @@ export default function Footer() {
                         <i className="fa fa-phone text-white"></i>
                       </Link>
                       <div className="col text-white mt-3">
-                        <h3>+234 8036 1317 21</h3>
+                        <h4>+234 8036 1317 21</h4>
                       </div>
                     </div>
                   </div>
@@ -88,6 +88,7 @@ export default function Footer() {
               <div>
                 2024 website made with{" "}
                 <i className="fa fa-heart text-danger"></i> by{" "}
+                <i className="fa fa-github mr-1 ml-1"></i>
                 <Link to="https://github.com/Nelson19so">Nelson</Link>
               </div>
               <div>

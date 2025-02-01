@@ -6,10 +6,16 @@ function Button({
   showiconThree,
   type,
   disabled,
+  onClick,
 }) {
   return (
     <>
-      <button className={className} type={type} disabled={disabled}>
+      <button
+        className={className}
+        type={type}
+        disabled={disabled}
+        onClick={onClick}
+      >
         {showicon && <i className="fa fa-upload mr-2"></i>}
         {showiconTwo && <i className="fa fa-play"></i>}
         {text}
