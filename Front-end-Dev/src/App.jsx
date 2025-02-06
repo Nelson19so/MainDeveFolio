@@ -1,6 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/blog/Home";
-import PageError from "./pages/error/PageError";
 import About from "./pages/blog/About";
 import Service from "./pages/blog/Service";
 import Servicesdetails from "./pages/blog/Servicesdetails";
@@ -9,6 +8,7 @@ import Contact from "./pages/blog/contact";
 import Testimonial from "./pages/blog/Testimonial";
 import Blogdetails from "./pages/blog/Blogdetails";
 import Project from "./pages/blog/Project";
+import Errorpage from "./pages/error/Errorpage";
 
 function App() {
   return (
@@ -34,7 +34,7 @@ function App() {
           {/* Project page url configuration */}
           <Route path="/Project" element={<Project />} />
           {/* 404 error page configuration over here */}
-          <Route path="*" element={<PageError />} />
+          <Route path="*" element={<Errorpage />} />
         </Routes>
       </BrowserRouter>
     </>
