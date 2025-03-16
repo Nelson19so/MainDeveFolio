@@ -17,22 +17,31 @@ function App() {
         <Routes>
           {/* Home page url configoration */}
           <Route path="/" element={<Home />} />
+
           {/* About page url configuration */}
           <Route path="/about" element={<About />} />
+
           {/* Service page url configuration */}
           <Route path="/service" element={<Service />} />
+
           {/* Service page url configuration */}
           <Route path="/servicesdetails" element={<Servicesdetails />} />
+
           {/* Blogpost page url configuration */}
           <Route path="/blogpost" element={<Blogpost />} />
+
           {/* Contact page url configuration */}
           <Route path="/contact" element={<Contact />} />
+
           {/* testimonial page url configuration */}
           <Route path="/testimonial" element={<Testimonial />} />
+
           {/* Blogdetails page url configuration */}
           <Route path="/Blogdetails" element={<Blogdetails />} />
+
           {/* Project page url configuration */}
           <Route path="/Project" element={<Project />} />
+
           {/* 404 error page configuration over here */}
           <Route path="*" element={<Errorpage />} />
         </Routes>
