@@ -62,7 +62,7 @@ export default function Servicecorousel({ pageheader }) {
                           <i className="fa fa-chevron-right"></i>
                           <i className="fa fa-chevron-right"></i>
                         </span>
-                        <p className="text-muted">HTML/CSS Design</p>
+                        <p className="text-muted">HTML / CSS Design</p>
                       </div>
                       <div className="container-items">
                         <span className="text-muted mr-4">
@@ -90,7 +90,7 @@ export default function Servicecorousel({ pageheader }) {
                           <i className="fa fa-chevron-right"></i>
                           <i className="fa fa-chevron-right"></i>
                         </span>
-                        <p className="text-muted">Django</p>
+                        <p className="text-muted">Django & DRF</p>
                       </div>
                     </div>
                   </div>
@@ -198,6 +198,13 @@ export default function Servicecorousel({ pageheader }) {
                         </span>
                         <p className="text-muted">MongoDB</p>
                       </div>
+                      <div className="container-items">
+                        <span className="text-muted mr-4">
+                          <i className="fa fa-chevron-right"></i>
+                          <i className="fa fa-chevron-right"></i>
+                        </span>
+                        <p className="text-muted">PosgresSQL</p>
+                      </div>
                     </div>
                   </div>
                   <div className="col-lg container-- d-none d-lg-block">
@@ -268,14 +275,14 @@ export default function Servicecorousel({ pageheader }) {
                           <i className="fa fa-chevron-right"></i>
                           <i className="fa fa-chevron-right"></i>
                         </span>
-                        <p className="text-muted">React</p>
+                        <p className="text-muted">Atom</p>
                       </div>
                       <div className="container-items">
                         <span className="text-muted mr-4">
                           <i className="fa fa-chevron-right"></i>
                           <i className="fa fa-chevron-right"></i>
                         </span>
-                        <p className="text-muted">Django</p>
+                        <p className="text-muted">Windows</p>
                       </div>
                     </div>
                   </div>

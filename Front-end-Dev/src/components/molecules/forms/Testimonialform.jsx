@@ -6,7 +6,7 @@ import Input from "../../atoms/input/Input";
 export default function Testimonialform() {
   const [name, setName] = useState("");
   const [work, setWork] = useState("");
-  const [profile, setProfile] = useState("");
+  const [profile, setProfile] = useState(null);
   const [testimonial, setTestimonial] = useState("");
   const [error, setError] = useState(null);
   const [success, setSuccess] = useState("");
@@ -71,7 +71,11 @@ export default function Testimonialform() {
           </div>
         )}
 
-        <form action="" onSubmit={handleSubmit}>
+        <form
+          method="post"
+          onSubmit={handleSubmit}
+          encType="multipart/form-data"
+        >
           <div className="input-control">
             <label htmlFor="name" className="text-muted">
               Your name?
@@ -166,7 +170,7 @@ export default function Testimonialform() {
               className="testimonial-input"
               maxLength="20"
               value={profile}
-              onChange={(event) => setProfile(event.target.value)}
+              onChange={(e) => setProfile(e.target.value)}
             />
           </div>
 

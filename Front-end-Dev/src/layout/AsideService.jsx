@@ -13,10 +13,10 @@ export default function AsideService() {
                 <h1 className="text-white">
                   Start your own project by hiring me to freelance/work for you.
                 </h1>
-                <h5 className="text-white mb-5">
+                <h5 className="text-white mb-2">
                   I hope my skills matches your companies requirement
                 </h5>
-                <Link>Hire Nelson</Link>
+                <Link>Hire Me</Link>
               </div>
             </div>
           </div>

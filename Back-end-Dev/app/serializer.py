@@ -10,6 +10,7 @@ class ContactSerializercreate(serializers.ModelSerializer):
     model = Contact
     fields = ["id", "name", "mobile_no", "email", "description", "date_added"]
 
+
 # Testimonial serializer
 class TestimonialSerializerCreate(serializers.ModelSerializer):
   
@@ -17,12 +18,16 @@ class TestimonialSerializerCreate(serializers.ModelSerializer):
     model = Testimonials
     fields = ["id", "name", "work", "testimonial", "profile", "date_added"]
 
+
+# project serializer
 class ProjectSerializerCreate(serializers.ModelSerializer):
  
  class Meta:
     model = Project
     fields = ["id", "projetct_name", "article", "link", "project_Img"]
 
+
+# blog post serializer
 class BlogPostSerializerCreate(serializers.ModelSerializer):
  
   class Meta:

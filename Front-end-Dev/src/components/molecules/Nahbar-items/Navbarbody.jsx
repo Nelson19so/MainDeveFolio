@@ -53,7 +53,7 @@ export default function Navbarbody() {
           </button>
 
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul className="navbar-nav mr-auto ml-5">
+            <ul className="navbar-nav mr-auto">
               <li className="nav-item">
                 <Link className="nav-link" onClick={scrolltop} to="/">
                   Home

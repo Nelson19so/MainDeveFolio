@@ -41,6 +41,8 @@ export default function Projectlayout({ displayheader, displayitems }) {
               <Link>
                 <Button text="Visit Website" className="btn-visit-web" />
               </Link>
+
+              <Button text="Github Repository" className="btn-visit-web ml-3" />
             </div>
 
             <div className="container-items-main main-items">
@@ -56,6 +58,8 @@ export default function Projectlayout({ displayheader, displayitems }) {
               <Link>
                 <Button text="Visit Website" className="btn-visit-web" />
               </Link>
+
+              <Button text="Github Repository" className="btn-visit-web ml-3" />
             </div>
           </div>
 
@@ -70,7 +74,10 @@ export default function Projectlayout({ displayheader, displayitems }) {
                     >
                       <div className="container p-0">
                         <div className="container-img pb-0">
-                          <img src={Blog1} alt="" />
+                          <img
+                            src={`http://127.0.0.1:8000${project.project_Img}`}
+                            alt=""
+                          />
                         </div>
                       </div>
                       <h5 className="text-white mt-3">
@@ -81,6 +88,12 @@ export default function Projectlayout({ displayheader, displayitems }) {
                         <Button
                           text="Visit Website"
                           className="btn-visit-web"
+                        />
+                      </Link>
+                      <Link to={project.link}>
+                        <Button
+                          text="Github Repository"
+                          className="btn-visit-web ml-3"
                         />
                       </Link>
                     </div>

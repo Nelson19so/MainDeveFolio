@@ -41,12 +41,12 @@ html::-webkit-scrollbar-thumb:hover {
 }
 
 .error {
-  background-color: rgb(253, 203, 203);
+  background-color: rgba(253, 203, 203, 0.1);
   font-weight: 600;
 }
 
 .success {
-  background-color: rgb(203, 255, 203);
+  background-color: rgba(203, 255, 203, 0.1);
   font-weight: 600;
 }
 
@@ -230,10 +230,33 @@ nav .container a,
 .Navbar-expand .container a {
   color: rgb(194, 194, 194);
 }
+@media only screen and (min-width: 769px) {
+  nav .container ul,
+  .Navbar-fixed .container ul,
+  .Navbar-expand .container ul {
+    margin-left: 15%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  nav .container ul,
+  .Navbar-fixed .container ul,
+  .Navbar-expand .container ul {
+    margin-left: 3%;
+    margin-bottom: 4%;
+  }
+}
 nav .container ul li a,
 .Navbar-fixed .container ul li a,
 .Navbar-expand .container ul li a {
   color: rgb(194, 194, 194);
+}
+@media only screen and (max-width: 768px) {
+  nav .container ul li a,
+  .Navbar-fixed .container ul li a,
+  .Navbar-expand .container ul li a {
+    border-bottom: 1px solid rgb(36, 36, 52);
+    padding: 4% 0;
+  }
 }
 nav .container ul li a:hover,
 .Navbar-fixed .container ul li a:hover,
@@ -262,10 +285,22 @@ nav .container ul li a:active, nav .container ul li a:focus, nav .container ul l
   top: 0;
   background-color: #282838;
 }
+@media only screen and (max-width: 768px) {
+  .Navbar-fixed {
+    padding-left: 5% !important;
+    padding-right: 5% !important;
+  }
+}
 
 .Navbar-expand {
   padding: 5% 0;
   top: 0;
+}
+@media only screen and (max-width: 768px) {
+  .Navbar-expand {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
 }
 
 .container-testimonial-form {
@@ -320,7 +355,12 @@ nav .container ul li a:active, nav .container ul li a:focus, nav .container ul l
 }
 @media only screen and (max-width: 768px) {
   .Home-page .backdrop-home .container {
-    padding: 0 10%;
+    padding: 0;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .Home-page .backdrop-home .container .row {
+    padding: 0 5%;
   }
 }
 .Home-page .backdrop-home .container .row .left-container h2,
@@ -453,7 +493,7 @@ nav .container ul li a:active, nav .container ul li a:focus, nav .container ul l
 @media only screen and (max-width: 768px) {
   .main-container-aside .container .container-img-aside .back-drop-- h1 {
     font-size: 16px;
-    margin: 0;
+    margin-top: 3%;
   }
   .main-container-aside .container .container-img-aside .back-drop-- h5 {
     font-size: 13px;
@@ -525,6 +565,12 @@ nav .container ul li a:active, nav .container ul li a:focus, nav .container ul l
   width: 100%;
   padding-left: 2%;
 }
+@media only screen and (max-width: 789px) {
+  .container-testimonials .container-testimonial-items .container--items {
+    margin: 0;
+    padding: 0;
+  }
+}
 .container-testimonials .container-testimonial-items .items {
   width: 30.5%;
   float: left;
@@ -535,6 +581,13 @@ nav .container ul li a:active, nav .container ul li a:focus, nav .container ul l
     width: 90.8%;
     float: none;
     margin-right: 0;
+  }
+}
+@media only screen and (max-width: 789px) {
+  .container-testimonials .container-testimonial-items .items {
+    display: flex;
+    justify-self: center;
+    margin-right: 2%;
   }
 }
 .container-testimonials .container-testimonial-items .container {
@@ -588,6 +641,11 @@ nav .container ul li a:active, nav .container ul li a:focus, nav .container ul l
 }
 .container-service-layout .container .container-two-box .container-left .row {
   padding-left: 3.5%;
+}
+@media only screen and (max-width: 768px) {
+  .container-service-layout .container .container-two-box .container-left .row .container-top-items {
+    margin-left: 5%;
+  }
 }
 .container-service-layout .container .container-two-box .container-left .row .top-container {
   background-color: rgb(36, 36, 52);
@@ -824,8 +882,18 @@ nav .container ul li a:active, nav .container ul li a:focus, nav .container ul l
 .container-header article p {
   font-size: 20px;
 }
+@media only screen and (max-width: 768px) {
+  .container-header article p {
+    font-size: 17px;
+  }
+}
 .container-header article h1 {
   font-size: 60px;
+}
+@media only screen and (max-width: 768px) {
+  .container-header article h1 {
+    font-size: 50px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

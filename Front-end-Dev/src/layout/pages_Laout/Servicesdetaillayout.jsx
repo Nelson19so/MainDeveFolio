@@ -10,10 +10,10 @@ export default function Servicesdetaillayout() {
       <div className="container-service-layout pt-5 pb-5">
         <div className="container container--">
           <div className="row container-two-box">
-            <div className="col-sm-4 container-left mb-5">
+            <div className="col-lg-4 container-left mb-5">
               <div className="row w-100">
                 <center>
-                  <div className="col-*-* top-container p-5 mb-5">
+                  <div className="col-*-* top-container p-5 container-top-items">
                     <h3 className="text-white text-center mb-5">Category</h3>
                     <Link>
                       <div className="container-text p-4 d-flex justify-content-between text-white">
@@ -71,7 +71,7 @@ export default function Servicesdetaillayout() {
                     </Link>
                   </div>
 
-                  <div className="col-*-* top-container p-5 mt-5">
+                  <div className="col-*-* top-container p-5 mt-5 container-top-items">
                     <h3 className="text-white text-center">
                       Resume
                       <i className="fa fa-download text-muted ml-3"></i>
@@ -116,7 +116,7 @@ export default function Servicesdetaillayout() {
               </div>
             </div>
 
-            <div className="col-sm container-right pl-5">
+            <div className="col-lg container-right pl-5">
               <div className="row container-inner-- w-100">
                 <div className="col-*-* container-img w-100 mb-5">
                   <img

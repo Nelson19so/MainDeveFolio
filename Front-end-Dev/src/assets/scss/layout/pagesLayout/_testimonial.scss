@@ -10,6 +10,11 @@
     .container--items {
       width: 100%;
       padding-left: 2%;
+
+      @media only screen and (max-width: 789px) {
+        margin: 0;
+        padding: 0;
+      }
     }
     .items {
       width: 30.5%;
@@ -20,6 +25,12 @@
         width: 90.8%;
         float: none;
         margin-right: 0;
+      }
+
+      @media only screen and (max-width: 789px) {
+        display: flex;
+        justify-self: center;
+        margin-right: 2%;
       }
     }
 

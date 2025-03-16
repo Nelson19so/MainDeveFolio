@@ -2,6 +2,7 @@ from django.db import models
 
 # Create your models here.
 
+# testimonial model
 class Testimonials(models.Model):
   name = models.CharField(max_length=20)
   work = models.CharField(max_length=20)
@@ -15,6 +16,8 @@ class Testimonials(models.Model):
   def __str__(self):
     return self.name
 
+
+# contact model
 class Contact(models.Model):
   name = models.CharField(max_length=20)
   mobile_no = models.CharField(max_length=17)
@@ -28,6 +31,8 @@ class Contact(models.Model):
   def __str__(self):
     return self.name
   
+
+# project model
 class Project(models.Model):
   projetct_name = models.CharField(max_length=200)
   article = models.CharField(max_length=200)
@@ -37,6 +42,8 @@ class Project(models.Model):
   def __str__(self):
     return self.projetct_name
   
+
+# blogpost model
 class BlogPost(models.Model):
   topic = models.CharField(max_length=200)
   heading = models.CharField(max_length=500)
