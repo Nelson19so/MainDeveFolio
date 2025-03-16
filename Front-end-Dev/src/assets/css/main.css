@@ -820,6 +820,7 @@ nav .container ul li a:active, nav .container ul li a:focus, nav .container ul l
   cursor: pointer;
   background-color: rgb(47, 47, 63);
   border-radius: 4px;
+  transition: 1s;
 }
 .container-faq .container .row .container-faq- .container-items-faq .container-items {
   display: none;

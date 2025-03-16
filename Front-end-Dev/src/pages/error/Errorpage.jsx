@@ -4,7 +4,7 @@ import Breadcrumbs from "../../layout/pages_Laout/Breadcrumbs";
 
 import pageError from "../../../images/404page-error.png";
 
-function PageError() {
+function Errorpage() {
   return (
     <>
       <div className="container-404-page">
@@ -44,4 +44,4 @@ function PageError() {
   );
 }
 
-export default PageError;
+export default Errorpage;
